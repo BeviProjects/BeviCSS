@@ -1,0 +1,14 @@
+.cursor {
+	&-default {
+		cursor: default;
+	}
+	&-none {
+		cursor: none;
+	}
+	&-pointer {
+		cursor: pointer;
+	}
+	&-text {
+		cursor: text;
+	}
+}

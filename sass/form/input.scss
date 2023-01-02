@@ -1,0 +1,18 @@
+:where(input[type='text'], input[type='password'], input[type='email'], input[type='tel'], input[type='search'], input[type='number'], input[type='date'], input[type='datetime'], input[type='datetime-local'], select, textarea) {
+	--_padding-block: 0.8125rem;
+
+	cursor: text;
+	outline: none;
+
+	&:where(:not(:active)):focus-visible {
+		--_border-color: black;
+	}
+}
+
+:where(input[type='date']) {
+	--_padding-block: 14px;
+}
+
+:where(textarea) {
+	height: 192px;
+}

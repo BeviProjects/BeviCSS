@@ -1,0 +1,12 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	font-family: var(--bv-font-text);
+	font-size: 1rem;
+	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+	color: var(--bv-gray-04);
+}

@@ -1,0 +1,40 @@
+p,
+small,
+pre,
+li,
+cite,
+sub,
+sup {
+	margin: 0;
+	font-size: 1em;
+}
+
+small {
+	font-size: 0.75em;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+sub,
+sup {
+	position: relative;
+	vertical-align: baseline;
+}
+
+span {
+	display: inline-block;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0 0 0 2ch;
+	list-style-position: inside;
+}
+
+pre {
+	white-space: normal;
+}

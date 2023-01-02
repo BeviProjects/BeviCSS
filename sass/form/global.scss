@@ -1,0 +1,139 @@
+:where(button, input, textarea, select, a, a.btn),
+:where(input[type='file'])::file-selector-button {
+	--_text-color: var(--bv-gray-04);
+	--_text-size: 1em;
+	--_text-weight: 600;
+	--_text-align: left;
+
+	--_padding-inline: 1rem;
+	--_padding-block: 1rem;
+
+	--_icon-size: 1rem;
+	--_icon-color: var(--_text-color);
+
+	--_background-color: var(--bv-gray-01);
+
+	--_border-radius: var(--bv-radius-md);
+	--_border-size: 0.125rem;
+	--_border-color: var(--bv-gray-02);
+	--_border-content: inset 0rem 0rem 0rem var(--_border-size)
+		var(--_border-color);
+
+	--_offset-size: 0.25rem;
+	--_offset-color: 0, 0%, 50%;
+	--_offset-strength: 0.25;
+	--_offset-content: 0rem 0rem 0rem var(--_offset-size)
+		hsla(var(--_offset-color), var(--_offset-strength));
+
+	--_shadow-size: 0px 4px 4px;
+	--_shadow-color: 185, 72%, 50%;
+	--_shadow-strength: 0.25;
+	--_shadow-content: var(--_shadow-size)
+		hsla(var(--_shadow-color), var(--_shadow-strength));
+
+	--_transition-motion-reduce: none;
+	--_transition-motion-ok: box-shadow var(--bv-duration-normal)
+			var(--bv-ease-in-out),
+		outline-offset var(--bv-duration-normal) var(--bv-ease-in-out),
+		background-color var(--bv-duration-normal) var(--bv-ease-in-out),
+		color var(--bv-duration-normal) var(--bv-ease-in-out);
+	--_transition: var(--_transition-motion-reduce);
+
+	font-family: var(--bv-font-form);
+	font-size: var(--_text-size);
+	font-weight: var(--_text-weight);
+	line-height: 1;
+	letter-spacing: inherit;
+	border-radius: var(--_border-radius);
+
+	touch-action: manipulation;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	appearance: none;
+
+	padding-inline: var(--_padding-inline);
+	padding-block: var(--_padding-block);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: var(--_text-align);
+	gap: 0.5rem;
+
+	background-color: var(--_background-color);
+	color: var(--_text-color);
+	border: none;
+	box-shadow: var(--_border-content);
+	transition: var(--_transition);
+
+	&:where(:not(:active)):focus-visible {
+		outline-offset: 4px;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		--_transition: var(--_transition-motion-ok);
+	}
+}
+
+:where(
+		button,
+		input[type='button'],
+		input[type='submit'],
+		input[type='reset'],
+		a.button
+	) {
+	svg path {
+		flex-shrink: 0;
+		fill: var(--_icon-color);
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+}
+
+:where(input[type='checkbox'], input[type='radio']) {
+	--_padding-inline: 0;
+	--_padding-block: 0;
+	--_size: 1rem;
+	--_background-color: transparent;
+
+	width: var(--_size);
+	height: var(--_size);
+	cursor: pointer;
+	position: relative;
+
+	&::before {
+		--_icon-size: calc(var(--_size) - 0.5rem);
+		content: '';
+		opacity: 0;
+
+		width: var(--_icon-size);
+		height: var(--_icon-size);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: opacity var(--bv-duration-normal) var(--bv-ease-in-out);
+	}
+
+	&:where(:not(:active):hover) {
+		&::before {
+			opacity: 1;
+		}
+	}
+
+	&:checked {
+		--_border-color: var(--bv-primary-01);
+
+		&::before {
+			opacity: 1;
+		}
+	}
+
+	&:where(.lg) {
+		--_size: 2rem;
+
+		&::before {
+			--_icon-size: calc(var(--_size) - 1rem);
+		}
+	}
+}

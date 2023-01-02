@@ -1,0 +1,544 @@
+.text-content {
+	width: 100%;
+	display: grid;
+	grid-auto-flow: row;
+	gap: 1em;
+	text-align: left;
+}
+
+.title {
+	&-lg,
+	&-md,
+	&-sm,
+	&-xs,
+	&-2xs,
+	&-3xs {
+		font-weight: 700;
+	}
+
+	&-lg {
+		font-size: 2.5em;
+	}
+
+	&-md {
+		font-size: 2em;
+	}
+
+	&-sm {
+		font-size: 1.5em;
+	}
+
+	&-xs {
+		font-size: 1.25em;
+	}
+
+	&-2xs {
+		font-size: 1em;
+	}
+
+	&-3xs {
+		font-size: 0.75em;
+	}
+}
+
+.\32xl {
+	@media (max-width: $screen-2xl) {
+		&\:title {
+			&-lg {
+				font-size: 2.5em;
+			}
+
+			&-md {
+				font-size: 2em;
+			}
+
+			&-sm {
+				font-size: 1.5em;
+			}
+
+			&-xs {
+				font-size: 1.25em;
+			}
+
+			&-2xs {
+				font-size: 1em;
+			}
+
+			&-3xs {
+				font-size: 0.75em;
+			}
+		}
+	}
+}
+
+.xl {
+	@media (max-width: $screen-xl) {
+		&\:title {
+			&-lg {
+				font-size: 2.5em;
+			}
+
+			&-md {
+				font-size: 2em;
+			}
+
+			&-sm {
+				font-size: 1.5em;
+			}
+
+			&-xs {
+				font-size: 1.25em;
+			}
+
+			&-2xs {
+				font-size: 1em;
+			}
+
+			&-3xs {
+				font-size: 0.75em;
+			}
+		}
+	}
+}
+
+.lg {
+	@media (max-width: $screen-lg) {
+		&\:title {
+			&-lg {
+				font-size: 2.5em;
+			}
+
+			&-md {
+				font-size: 2em;
+			}
+
+			&-sm {
+				font-size: 1.5em;
+			}
+
+			&-xs {
+				font-size: 1.25em;
+			}
+
+			&-2xs {
+				font-size: 1em;
+			}
+
+			&-3xs {
+				font-size: 0.75em;
+			}
+		}
+	}
+}
+
+.md {
+	@media (max-width: $screen-md) {
+		&\:title {
+			&-lg {
+				font-size: 2.5em;
+			}
+
+			&-md {
+				font-size: 2em;
+			}
+
+			&-sm {
+				font-size: 1.5em;
+			}
+
+			&-xs {
+				font-size: 1.25em;
+			}
+
+			&-2xs {
+				font-size: 1em;
+			}
+
+			&-3xs {
+				font-size: 0.75em;
+			}
+		}
+	}
+}
+
+.sm {
+	@media (max-width: $screen-sm) {
+		&\:title {
+			&-lg {
+				font-size: 2.5em;
+			}
+
+			&-md {
+				font-size: 2em;
+			}
+
+			&-sm {
+				font-size: 1.5em;
+			}
+
+			&-xs {
+				font-size: 1.25em;
+			}
+
+			&-2xs {
+				font-size: 1em;
+			}
+
+			&-3xs {
+				font-size: 0.75em;
+			}
+		}
+	}
+}
+
+.font-size {
+	&-lg {
+		font-size: 1.25em;
+	}
+
+	&-md {
+		font-size: 1em;
+	}
+
+	&-sm {
+		font-size: 0.75em;
+	}
+
+	&-xs {
+		font-size: 0.625em;
+	}
+}
+
+.\32xl {
+	@media (max-width: $screen-2xl) {
+		&\:font-size {
+			&-lg {
+				font-size: 1.25em;
+			}
+
+			&-md {
+				font-size: 1em;
+			}
+
+			&-sm {
+				font-size: 0.75em;
+			}
+
+			&-xs {
+				font-size: 0.625em;
+			}
+		}
+	}
+}
+
+.xl {
+	@media (max-width: $screen-xl) {
+		&\:font-size {
+			&-lg {
+				font-size: 1.25em;
+			}
+
+			&-md {
+				font-size: 1em;
+			}
+
+			&-sm {
+				font-size: 0.75em;
+			}
+
+			&-xs {
+				font-size: 0.625em;
+			}
+		}
+	}
+}
+
+.lg {
+	@media (max-width: $screen-lg) {
+		&\:font-size {
+			&-lg {
+				font-size: 1.25em;
+			}
+
+			&-md {
+				font-size: 1em;
+			}
+
+			&-sm {
+				font-size: 0.75em;
+			}
+
+			&-xs {
+				font-size: 0.625em;
+			}
+		}
+	}
+}
+
+.md {
+	@media (max-width: $screen-md) {
+		&\:font-size {
+			&-lg {
+				font-size: 1.25em;
+			}
+
+			&-md {
+				font-size: 1em;
+			}
+
+			&-sm {
+				font-size: 0.75em;
+			}
+
+			&-xs {
+				font-size: 0.625em;
+			}
+		}
+	}
+}
+
+.sm {
+	@media (max-width: $screen-sm) {
+		&\:font-size {
+			&-lg {
+				font-size: 1.25em;
+			}
+
+			&-md {
+				font-size: 1em;
+			}
+
+			&-sm {
+				font-size: 0.75em;
+			}
+
+			&-xs {
+				font-size: 0.625em;
+			}
+		}
+	}
+}
+
+.text {
+	&-align {
+		&-left {
+			text-align: left !important;
+		}
+		&-right {
+			text-align: right !important;
+		}
+		&-center {
+			text-align: center !important;
+		}
+		&-justify {
+			text-align: justify !important;
+		}
+	}
+
+	&-transform {
+		&-none {
+			text-transform: none !important;
+		}
+		&-capitalize {
+			text-transform: capitalize !important;
+		}
+		&-uppercase {
+			text-transform: uppercase !important;
+		}
+		&-lowercase {
+			text-transform: lowercase !important;
+		}
+		&-full-width {
+			text-transform: full-width !important;
+		}
+		&-full-size-kana {
+			text-transform: full-size-kana !important;
+		}
+	}
+
+	&-decoration {
+		&-underline {
+			text-decoration: underline !important;
+		}
+		&-overline {
+			text-decoration: overline !important;
+		}
+		&-none {
+			text-decoration: none !important;
+		}
+	}
+}
+
+.\32xl {
+	@media (max-width: $screen-2xl) {
+		&\:text {
+			&-align {
+				&-left {
+					text-align: left !important;
+				}
+				&-right {
+					text-align: right !important;
+				}
+				&-center {
+					text-align: center !important;
+				}
+				&-justify {
+					text-align: justify !important;
+				}
+			}
+		}
+	}
+}
+
+.xl {
+	@media (max-width: $screen-xl) {
+		&\:text {
+			&-align {
+				&-left {
+					text-align: left !important;
+				}
+				&-right {
+					text-align: right !important;
+				}
+				&-center {
+					text-align: center !important;
+				}
+				&-justify {
+					text-align: justify !important;
+				}
+			}
+		}
+	}
+}
+
+.lg {
+	@media (max-width: $screen-lg) {
+		&\:text {
+			&-align {
+				&-left {
+					text-align: left !important;
+				}
+				&-right {
+					text-align: right !important;
+				}
+				&-center {
+					text-align: center !important;
+				}
+				&-justify {
+					text-align: justify !important;
+				}
+			}
+		}
+	}
+}
+
+.md {
+	@media (max-width: $screen-md) {
+		&\:text {
+			&-align {
+				&-left {
+					text-align: left !important;
+				}
+				&-right {
+					text-align: right !important;
+				}
+				&-center {
+					text-align: center !important;
+				}
+				&-justify {
+					text-align: justify !important;
+				}
+			}
+		}
+	}
+}
+
+.sm {
+	@media (max-width: $screen-sm) {
+		&\:text {
+			&-align {
+				&-left {
+					text-align: left !important;
+				}
+				&-right {
+					text-align: right !important;
+				}
+				&-center {
+					text-align: center !important;
+				}
+				&-justify {
+					text-align: justify !important;
+				}
+			}
+		}
+	}
+}
+
+.font {
+	&-style {
+		&-normal {
+			font-style: normal !important;
+		}
+		&-italic {
+			font-style: italic !important;
+		}
+		&-oblique {
+			font-style: oblique !important;
+		}
+	}
+
+	&-weight {
+		&-200,
+		&-extra-light {
+			font-weight: 200 !important;
+		}
+
+		&-300,
+		&-light {
+			font-weight: 300 !important;
+		}
+
+		&-400,
+		&-regular {
+			font-weight: 400 !important;
+		}
+
+		&-500,
+		&-medium {
+			font-weight: 500 !important;
+		}
+
+		&-600,
+		&-semi-bold {
+			font-weight: 600 !important;
+		}
+
+		&-700,
+		&-bold {
+			font-weight: 700 !important;
+		}
+
+		&-800,
+		&-extra-bold {
+			font-weight: 800 !important;
+		}
+
+		&-900,
+		&-black {
+			font-weight: 900 !important;
+		}
+
+		&-1000,
+		&-weight {
+			font-weight: 1000 !important;
+		}
+	}
+}
+
+.line {
+	&-height {
+		&-1 {
+			line-height: 1;
+		}
+	}
+}

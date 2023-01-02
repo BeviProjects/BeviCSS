@@ -1,0 +1,35 @@
+.bv-container {
+	&-lg,
+	&-md,
+	&-sm,
+	&-full {
+		position: relative;
+		padding: 0 4rem;
+		margin: 0 auto;
+	}
+
+	&-lg {
+		width: min(96rem, 100%);
+	}
+
+	&-md {
+		width: min(80rem, 100%);
+	}
+
+	&-sm {
+		width: min(64rem, 100%);
+	}
+
+	&-full {
+		width: 100%;
+	}
+
+	@media (max-width: $screen-lg) {
+		&-lg,
+		&-md,
+		&-sm,
+		&-full {
+			padding: 0 2rem;
+		}
+	}
+}

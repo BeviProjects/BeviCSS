@@ -1,0 +1,21 @@
+input[type='radio'] {
+	--_border-radius: calc(var(--_size) / 2);
+
+	&::before {
+		--_icon-size: calc(var(--_size) - 8px);
+		border-radius: calc(var(--_size) / 2);
+		background-color: var(--bv-gray-02);
+	}
+
+	&:checked {
+		&::before {
+			background-color: var(--bv-primary-01);
+		}
+	}
+
+	&:where(.lg) {
+		&::before {
+			--_icon-size: calc(var(--_size) - 1rem);
+		}
+	}
+}
