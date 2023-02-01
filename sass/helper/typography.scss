@@ -161,12 +161,9 @@
 .title {
 	@include title-size;
 }
-// Responsive
-
 .font-size {
 	@include font-size;
 }
-// Responsive
 
 .text {
 	@include text(align, left, right, center, justify);
@@ -181,7 +178,6 @@
 	);
 	@include text(decoration, underline, overline, none);
 }
-// Responsive
 
 .font {
 	@include font-style(style, normal, italic, oblique);

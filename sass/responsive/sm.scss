@@ -1,4 +1,9 @@
 @include res-query-sm {
+	@include res-class-sm(ds){
+		@include ds;
+		@include ds-flex;
+		@include ds-grid;
+	}
 	@include res-class-sm(gap) {
 		@include gap;
 	}

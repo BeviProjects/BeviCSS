@@ -32,20 +32,24 @@
 	}
 }
 
-.ds {
+@mixin ds-flex{
 	&-flex {
 		display: flex;
-
+	
 		&-center {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 		}
 	}
-
+	
 	&-inline-flex {
 		display: inline-flex;
 	}
+}
+
+.ds{
+	@include ds-flex;
 }
 
 .flow {

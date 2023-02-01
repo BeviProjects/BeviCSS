@@ -1,4 +1,9 @@
 @include res-query-xl {
+	@include res-class-xl(ds){
+		@include ds;
+		@include ds-flex;
+		@include ds-grid;
+	}
 	@include res-class-xl(gap) {
 		@include gap;
 	}

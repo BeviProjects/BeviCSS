@@ -1,3 +1,8 @@
-.ds {
+
+@mixin ds(){
 	@include property(display, none, inline, block, inline-block, inline-grid);
+}
+
+.ds{
+	@include ds;
 }

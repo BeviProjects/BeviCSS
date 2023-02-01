@@ -11,6 +11,11 @@
 			}
 		}
 	}
+	@include res-class-lg(ds){
+		@include ds;
+		@include ds-flex;
+		@include ds-grid;
+	}
 	@include res-class-lg(gap) {
 		@include gap;
 	}
