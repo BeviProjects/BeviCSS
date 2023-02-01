@@ -1,0 +1,8 @@
+@include prefix('row') {
+	width: 100%;
+	display: flex;
+	flex-flow: wrap row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}

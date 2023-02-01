@@ -1,13 +1,4 @@
-.bv-row {
-	width: 100%;
-	display: flex;
-	flex-flow: wrap row;
-	align-items: center;
-	justify-content: center;
-	gap: 1rem;
-}
-
-.bv-col {
+@include prefix('col') {
 	display: block;
 	flex-basis: 0;
 	flex-grow: 1;
@@ -17,22 +8,6 @@
 		&.is-#{$i} {
 			flex: none;
 			width: percentage(math.div($i, 12));
-		}
-	}
-}
-
-@media (max-width: $screen-lg) {
-	.bv-row {
-		flex-flow: wrap column;
-	}
-
-	.bv-col {
-		width: 100%;
-
-		@for $i from 0 through 12 {
-			&.is-#{$i} {
-				width: 100%;
-			}
 		}
 	}
 }
