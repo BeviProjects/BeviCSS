@@ -1,25 +1,7 @@
-.hide,
-.hide-on-desk {
-	display: none;
-	visibility: hidden;
-}
-
 .hidden {
 	visibility: hidden;
 }
 
 .visible {
 	visibility: visible;
-}
-
-@media (max-width: $screen-lg) {
-	.hide-on-mobile {
-		display: none;
-		visibility: hidden;
-	}
-
-	.hide-on-desk {
-		display: block;
-		visibility: visible;
-	}
 }
