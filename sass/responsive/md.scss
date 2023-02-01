@@ -1,4 +1,9 @@
 @include res-query-md {
+	@include res-class-md(ds){
+		@include ds;
+		@include ds-flex;
+		@include ds-grid;
+	}
 	@include res-class-md(gap) {
 		@include gap;
 	}

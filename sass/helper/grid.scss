@@ -17,10 +17,14 @@
 	}
 }
 
-.ds {
+@mixin ds-grid{
 	&-grid {
 		display: grid;
 	}
+}
+
+.ds {
+	@include ds-grid;
 }
 
 .grid-flow {
