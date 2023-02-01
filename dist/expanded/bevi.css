@@ -1327,53 +1327,53 @@ pre {
   font-size: 0.625em;
 }
 
-.text-align {
+.text-align-left {
   text-align: left !important;
 }
-.text-align {
+.text-align-right {
   text-align: right !important;
 }
-.text-align {
+.text-align-center {
   text-align: center !important;
 }
-.text-align {
+.text-align-justify {
   text-align: justify !important;
 }
-.text-transform {
+.text-transform-none {
   text-transform: none !important;
 }
-.text-transform {
+.text-transform-capitalize {
   text-transform: capitalize !important;
 }
-.text-transform {
+.text-transform-uppercase {
   text-transform: uppercase !important;
 }
-.text-transform {
+.text-transform-lowercase {
   text-transform: lowercase !important;
 }
-.text-transform {
+.text-transform-full-width {
   text-transform: full-width !important;
 }
-.text-transform {
+.text-transform-full-size-kana {
   text-transform: full-size-kana !important;
 }
-.text-decoration {
+.text-decoration-underline {
   text-decoration: underline !important;
 }
-.text-decoration {
+.text-decoration-overline {
   text-decoration: overline !important;
 }
-.text-decoration {
+.text-decoration-none {
   text-decoration: none !important;
 }
 
-.font-style-style {
+.font-style-normal {
   font-style: normal !important;
 }
-.font-style-style {
+.font-style-italic {
   font-style: italic !important;
 }
-.font-style-style {
+.font-style-oblique {
   font-style: oblique !important;
 }
 .font-weight-200, .font-weight-extra-light {
@@ -1882,43 +1882,43 @@ input[type=radio]:where(.lg)::before {
   .\32 xl\:font-size-xs {
     font-size: 0.625em;
   }
-  .\32 xl\:text-align {
+  .\32 xl\:text-align-left {
     text-align: left !important;
   }
-  .\32 xl\:text-align {
+  .\32 xl\:text-align-right {
     text-align: right !important;
   }
-  .\32 xl\:text-align {
+  .\32 xl\:text-align-center {
     text-align: center !important;
   }
-  .\32 xl\:text-align {
+  .\32 xl\:text-align-justify {
     text-align: justify !important;
   }
-  .\32 xl\:text-transform {
+  .\32 xl\:text-transform-none {
     text-transform: none !important;
   }
-  .\32 xl\:text-transform {
+  .\32 xl\:text-transform-capitalize {
     text-transform: capitalize !important;
   }
-  .\32 xl\:text-transform {
+  .\32 xl\:text-transform-uppercase {
     text-transform: uppercase !important;
   }
-  .\32 xl\:text-transform {
+  .\32 xl\:text-transform-lowercase {
     text-transform: lowercase !important;
   }
-  .\32 xl\:text-transform {
+  .\32 xl\:text-transform-full-width {
     text-transform: full-width !important;
   }
-  .\32 xl\:text-transform {
+  .\32 xl\:text-transform-full-size-kana {
     text-transform: full-size-kana !important;
   }
-  .\32 xl\:text-decoration {
+  .\32 xl\:text-decoration-underline {
     text-decoration: underline !important;
   }
-  .\32 xl\:text-decoration {
+  .\32 xl\:text-decoration-overline {
     text-decoration: overline !important;
   }
-  .\32 xl\:text-decoration {
+  .\32 xl\:text-decoration-none {
     text-decoration: none !important;
   }
   .\32 xl\:hidden {
@@ -2046,43 +2046,43 @@ input[type=radio]:where(.lg)::before {
   .xl\:font-size-xs {
     font-size: 0.625em;
   }
-  .xl\:text-align {
+  .xl\:text-align-left {
     text-align: left !important;
   }
-  .xl\:text-align {
+  .xl\:text-align-right {
     text-align: right !important;
   }
-  .xl\:text-align {
+  .xl\:text-align-center {
     text-align: center !important;
   }
-  .xl\:text-align {
+  .xl\:text-align-justify {
     text-align: justify !important;
   }
-  .xl\:text-transform {
+  .xl\:text-transform-none {
     text-transform: none !important;
   }
-  .xl\:text-transform {
+  .xl\:text-transform-capitalize {
     text-transform: capitalize !important;
   }
-  .xl\:text-transform {
+  .xl\:text-transform-uppercase {
     text-transform: uppercase !important;
   }
-  .xl\:text-transform {
+  .xl\:text-transform-lowercase {
     text-transform: lowercase !important;
   }
-  .xl\:text-transform {
+  .xl\:text-transform-full-width {
     text-transform: full-width !important;
   }
-  .xl\:text-transform {
+  .xl\:text-transform-full-size-kana {
     text-transform: full-size-kana !important;
   }
-  .xl\:text-decoration {
+  .xl\:text-decoration-underline {
     text-decoration: underline !important;
   }
-  .xl\:text-decoration {
+  .xl\:text-decoration-overline {
     text-decoration: overline !important;
   }
-  .xl\:text-decoration {
+  .xl\:text-decoration-none {
     text-decoration: none !important;
   }
   .xl\:hidden {
@@ -2255,43 +2255,43 @@ input[type=radio]:where(.lg)::before {
   .lg\:font-size-xs {
     font-size: 0.625em;
   }
-  .lg\:text-align {
+  .lg\:text-align-left {
     text-align: left !important;
   }
-  .lg\:text-align {
+  .lg\:text-align-right {
     text-align: right !important;
   }
-  .lg\:text-align {
+  .lg\:text-align-center {
     text-align: center !important;
   }
-  .lg\:text-align {
+  .lg\:text-align-justify {
     text-align: justify !important;
   }
-  .lg\:text-transform {
+  .lg\:text-transform-none {
     text-transform: none !important;
   }
-  .lg\:text-transform {
+  .lg\:text-transform-capitalize {
     text-transform: capitalize !important;
   }
-  .lg\:text-transform {
+  .lg\:text-transform-uppercase {
     text-transform: uppercase !important;
   }
-  .lg\:text-transform {
+  .lg\:text-transform-lowercase {
     text-transform: lowercase !important;
   }
-  .lg\:text-transform {
+  .lg\:text-transform-full-width {
     text-transform: full-width !important;
   }
-  .lg\:text-transform {
+  .lg\:text-transform-full-size-kana {
     text-transform: full-size-kana !important;
   }
-  .lg\:text-decoration {
+  .lg\:text-decoration-underline {
     text-decoration: underline !important;
   }
-  .lg\:text-decoration {
+  .lg\:text-decoration-overline {
     text-decoration: overline !important;
   }
-  .lg\:text-decoration {
+  .lg\:text-decoration-none {
     text-decoration: none !important;
   }
   .lg\:hidden {
@@ -2419,43 +2419,43 @@ input[type=radio]:where(.lg)::before {
   .md\:font-size-xs {
     font-size: 0.625em;
   }
-  .md\:text-align {
+  .md\:text-align-left {
     text-align: left !important;
   }
-  .md\:text-align {
+  .md\:text-align-right {
     text-align: right !important;
   }
-  .md\:text-align {
+  .md\:text-align-center {
     text-align: center !important;
   }
-  .md\:text-align {
+  .md\:text-align-justify {
     text-align: justify !important;
   }
-  .md\:text-transform {
+  .md\:text-transform-none {
     text-transform: none !important;
   }
-  .md\:text-transform {
+  .md\:text-transform-capitalize {
     text-transform: capitalize !important;
   }
-  .md\:text-transform {
+  .md\:text-transform-uppercase {
     text-transform: uppercase !important;
   }
-  .md\:text-transform {
+  .md\:text-transform-lowercase {
     text-transform: lowercase !important;
   }
-  .md\:text-transform {
+  .md\:text-transform-full-width {
     text-transform: full-width !important;
   }
-  .md\:text-transform {
+  .md\:text-transform-full-size-kana {
     text-transform: full-size-kana !important;
   }
-  .md\:text-decoration {
+  .md\:text-decoration-underline {
     text-decoration: underline !important;
   }
-  .md\:text-decoration {
+  .md\:text-decoration-overline {
     text-decoration: overline !important;
   }
-  .md\:text-decoration {
+  .md\:text-decoration-none {
     text-decoration: none !important;
   }
   .md\:hidden {
@@ -2583,43 +2583,43 @@ input[type=radio]:where(.lg)::before {
   .sm\:font-size-xs {
     font-size: 0.625em;
   }
-  .sm\:text-align {
+  .sm\:text-align-left {
     text-align: left !important;
   }
-  .sm\:text-align {
+  .sm\:text-align-right {
     text-align: right !important;
   }
-  .sm\:text-align {
+  .sm\:text-align-center {
     text-align: center !important;
   }
-  .sm\:text-align {
+  .sm\:text-align-justify {
     text-align: justify !important;
   }
-  .sm\:text-transform {
+  .sm\:text-transform-none {
     text-transform: none !important;
   }
-  .sm\:text-transform {
+  .sm\:text-transform-capitalize {
     text-transform: capitalize !important;
   }
-  .sm\:text-transform {
+  .sm\:text-transform-uppercase {
     text-transform: uppercase !important;
   }
-  .sm\:text-transform {
+  .sm\:text-transform-lowercase {
     text-transform: lowercase !important;
   }
-  .sm\:text-transform {
+  .sm\:text-transform-full-width {
     text-transform: full-width !important;
   }
-  .sm\:text-transform {
+  .sm\:text-transform-full-size-kana {
     text-transform: full-size-kana !important;
   }
-  .sm\:text-decoration {
+  .sm\:text-decoration-underline {
     text-decoration: underline !important;
   }
-  .sm\:text-decoration {
+  .sm\:text-decoration-overline {
     text-decoration: overline !important;
   }
-  .sm\:text-decoration {
+  .sm\:text-decoration-none {
     text-decoration: none !important;
   }
   .sm\:hidden {

@@ -68,18 +68,16 @@
 
 @mixin text($property, $values...) {
 	@each $value in $values {
-		&-#{$property} {
+		&-#{$property}-#{$value} {
 			text-#{$property}: $value !important;
 		}
 	}
 }
 
 @mixin font-style($property, $values...) {
-	&-style {
-		@each $value in $values {
-			&-#{$property} {
-				font-#{$property}: $value !important;
-			}
+	@each $value in $values {
+		&-#{$property}-#{$value} {
+			font-#{$property}: $value !important;
 		}
 	}
 }
