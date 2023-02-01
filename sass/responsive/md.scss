@@ -1,0 +1,43 @@
+@include res-query-md {
+	@include res-class-md(gap) {
+		@include gap;
+	}
+	@include res-class-md(flow) {
+		@include flex-flow;
+	}
+	@include res-class-md(grid-tpl) {
+		@include grid-tpl;
+	}
+	@include res-class-md(display) {
+		@include typography-display;
+	}
+	@include res-class-md(title) {
+		@include title-size;
+	}
+	@include res-class-md(font-size) {
+		@include font-size;
+	}
+	@include res-class-md(text) {
+		@include text(align, left, right, center, justify);
+	}
+	@include res-class-md(text) {
+		@include text(
+			transform,
+			none,
+			capitalize,
+			uppercase,
+			lowercase,
+			full-width,
+			full-size-kana
+		);
+	}
+	@include res-class-md(text) {
+		@include text(decoration, underline, overline, none);
+	}
+	@include res-class-md(hidden) {
+		visibility: hidden;
+	}
+	@include res-class-md(visible) {
+		visibility: visible;
+	}
+}
