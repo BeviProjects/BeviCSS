@@ -1,8 +1,7 @@
-header{
-  z-index: 2;
+header {
+	z-index: 2;
 }
 
-main,
-footer{
-  z-index: 1;
+:is(main, footer) {
+	z-index: 1;
 }
