@@ -1,20 +1,4 @@
-.ds {
-	&-flex {
-		display: flex;
-
-		&-center {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-	}
-
-	&-inline-flex {
-		display: inline-flex;
-	}
-}
-
-.flow {
+@mixin flex-flow {
 	&-row-wr {
 		flex-flow: row wrap;
 	}
@@ -48,194 +32,24 @@
 	}
 }
 
-.\32xl {
-	@media (max-width: $screen-2xl) {
-		&\:flow {
-			&-row-wr {
-				flex-flow: row wrap;
-			}
+.ds {
+	&-flex {
+		display: flex;
 
-			&-row-nw {
-				flex-flow: row nowrap;
-			}
-
-			&-row-reverse-wr {
-				flex-flow: row-reverse wrap;
-			}
-
-			&-row-reverse-nw {
-				flex-flow: row-reverse nowrap;
-			}
-
-			&-col-wr {
-				flex-flow: column wrap;
-			}
-
-			&-col-nw {
-				flex-flow: column nowrap;
-			}
-
-			&-col-reverse-wr {
-				flex-flow: column-reverse wrap;
-			}
-
-			&-col-reverse-nw {
-				flex-flow: column-reverse nowrap;
-			}
+		&-center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
+	}
+
+	&-inline-flex {
+		display: inline-flex;
 	}
 }
 
-.xl {
-	@media (max-width: $screen-xl) {
-		&\:flow {
-			&-row-wr {
-				flex-flow: row wrap;
-			}
-
-			&-row-nw {
-				flex-flow: row nowrap;
-			}
-
-			&-row-reverse-wr {
-				flex-flow: row-reverse wrap;
-			}
-
-			&-row-reverse-nw {
-				flex-flow: row-reverse nowrap;
-			}
-
-			&-col-wr {
-				flex-flow: column wrap;
-			}
-
-			&-col-nw {
-				flex-flow: column nowrap;
-			}
-
-			&-col-reverse-wr {
-				flex-flow: column-reverse wrap;
-			}
-
-			&-col-reverse-nw {
-				flex-flow: column-reverse nowrap;
-			}
-		}
-	}
-}
-
-.lg {
-	@media (max-width: $screen-lg) {
-		&\:flow {
-			&-row-wr {
-				flex-flow: row wrap;
-			}
-
-			&-row-nw {
-				flex-flow: row nowrap;
-			}
-
-			&-row-reverse-wr {
-				flex-flow: row-reverse wrap;
-			}
-
-			&-row-reverse-nw {
-				flex-flow: row-reverse nowrap;
-			}
-
-			&-col-wr {
-				flex-flow: column wrap;
-			}
-
-			&-col-nw {
-				flex-flow: column nowrap;
-			}
-
-			&-col-reverse-wr {
-				flex-flow: column-reverse wrap;
-			}
-
-			&-col-reverse-nw {
-				flex-flow: column-reverse nowrap;
-			}
-		}
-	}
-}
-
-.md {
-	@media (max-width: $screen-md) {
-		&\:flow {
-			&-row-wr {
-				flex-flow: row wrap;
-			}
-
-			&-row-nw {
-				flex-flow: row nowrap;
-			}
-
-			&-row-reverse-wr {
-				flex-flow: row-reverse wrap;
-			}
-
-			&-row-reverse-nw {
-				flex-flow: row-reverse nowrap;
-			}
-
-			&-col-wr {
-				flex-flow: column wrap;
-			}
-
-			&-col-nw {
-				flex-flow: column nowrap;
-			}
-
-			&-col-reverse-wr {
-				flex-flow: column-reverse wrap;
-			}
-
-			&-col-reverse-nw {
-				flex-flow: column-reverse nowrap;
-			}
-		}
-	}
-}
-
-.sm {
-	@media (max-width: $screen-sm) {
-		&\:flow {
-			&-row-wr {
-				flex-flow: row wrap;
-			}
-
-			&-row-nw {
-				flex-flow: row nowrap;
-			}
-
-			&-row-reverse-wr {
-				flex-flow: row-reverse wrap;
-			}
-
-			&-row-reverse-nw {
-				flex-flow: row-reverse nowrap;
-			}
-
-			&-col-wr {
-				flex-flow: column wrap;
-			}
-
-			&-col-nw {
-				flex-flow: column nowrap;
-			}
-
-			&-col-reverse-wr {
-				flex-flow: column-reverse wrap;
-			}
-
-			&-col-reverse-nw {
-				flex-flow: column-reverse nowrap;
-			}
-		}
-	}
+.flow {
+	@include flex-flow;
 }
 
 .justify {

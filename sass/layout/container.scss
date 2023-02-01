@@ -1,4 +1,4 @@
-.bv-container {
+@include prefix('container') {
 	&-lg,
 	&-md,
 	&-sm,

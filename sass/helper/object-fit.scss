@@ -1,17 +1,3 @@
 .object {
-	&-contain {
-		object-fit: contain;
-	}
-	&-cover {
-		object-fit: cover;
-	}
-	&-fill {
-		object-fit: fill;
-	}
-	&-none {
-		object-fit: none;
-	}
-	&-scale-down {
-		object-fit: scale-down;
-	}
+	@include property(object-fit, contain, cover, fill, none, scale-down);
 }

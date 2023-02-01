@@ -1,4 +1,4 @@
-.display {
+@mixin typography-display {
 	&-lg {
 		font-size: clamp(6em, 10vw, 12em);
 	}
@@ -12,92 +12,6 @@
 	}
 }
 
-.\32xl {
-	@media (max-width: $screen-2xl) {
-		&\:display {
-			&-lg {
-				font-size: clamp(6em, 10vw, 12em);
-			}
-
-			&-md {
-				font-size: clamp(4.5em, 5vw, 6em);
-			}
-
-			&-sm {
-				font-size: 4.5em;
-			}
-		}
-	}
-}
-
-.xl {
-	@media (max-width: $screen-xl) {
-		&\:display {
-			&-lg {
-				font-size: clamp(6em, 10vw, 12em);
-			}
-
-			&-md {
-				font-size: clamp(4.5em, 5vw, 6em);
-			}
-
-			&-sm {
-				font-size: 4.5em;
-			}
-		}
-	}
-}
-
-.lg {
-	@media (max-width: $screen-lg) {
-		&\:display {
-			&-lg {
-				font-size: clamp(6em, 10vw, 12em);
-			}
-
-			&-md {
-				font-size: clamp(4.5em, 5vw, 6em);
-			}
-
-			&-sm {
-				font-size: 4.5em;
-			}
-		}
-	}
-}
-
-.md {
-	@media (max-width: $screen-md) {
-		&\:display {
-			&-lg {
-				font-size: clamp(6em, 10vw, 12em);
-			}
-
-			&-md {
-				font-size: clamp(4.5em, 5vw, 6em);
-			}
-
-			&-sm {
-				font-size: 4.5em;
-			}
-		}
-	}
-}
-
-.sm {
-	@media (max-width: $screen-sm) {
-		&\:display {
-			&-lg {
-				font-size: clamp(6em, 10vw, 12em);
-			}
-
-			&-md {
-				font-size: clamp(4.5em, 5vw, 6em);
-			}
-
-			&-sm {
-				font-size: 4.5em;
-			}
-		}
-	}
+.display {
+	@include typography-display;
 }

@@ -1,21 +1,27 @@
-.text-content {
-	width: 100%;
-	display: grid;
-	grid-auto-flow: row;
-	gap: 1em;
-	text-align: left;
+// Mixin for heading size
+@mixin heading {
+	&#{1} {
+		font-size: 2.5em;
+	}
+	&#{2} {
+		font-size: 2em;
+	}
+	&#{3} {
+		font-size: 1.5em;
+	}
+	&#{4} {
+		font-size: 1.25em;
+	}
+	&#{5} {
+		font-size: 1em;
+	}
+	&#{6} {
+		font-size: 0.75em;
+	}
 }
 
-.title {
-	&-lg,
-	&-md,
-	&-sm,
-	&-xs,
-	&-2xs,
-	&-3xs {
-		font-weight: 700;
-	}
-
+// Mixin for title size
+@mixin title-size {
 	&-lg {
 		font-size: 2.5em;
 	}
@@ -41,157 +47,8 @@
 	}
 }
 
-.\32xl {
-	@media (max-width: $screen-2xl) {
-		&\:title {
-			&-lg {
-				font-size: 2.5em;
-			}
-
-			&-md {
-				font-size: 2em;
-			}
-
-			&-sm {
-				font-size: 1.5em;
-			}
-
-			&-xs {
-				font-size: 1.25em;
-			}
-
-			&-2xs {
-				font-size: 1em;
-			}
-
-			&-3xs {
-				font-size: 0.75em;
-			}
-		}
-	}
-}
-
-.xl {
-	@media (max-width: $screen-xl) {
-		&\:title {
-			&-lg {
-				font-size: 2.5em;
-			}
-
-			&-md {
-				font-size: 2em;
-			}
-
-			&-sm {
-				font-size: 1.5em;
-			}
-
-			&-xs {
-				font-size: 1.25em;
-			}
-
-			&-2xs {
-				font-size: 1em;
-			}
-
-			&-3xs {
-				font-size: 0.75em;
-			}
-		}
-	}
-}
-
-.lg {
-	@media (max-width: $screen-lg) {
-		&\:title {
-			&-lg {
-				font-size: 2.5em;
-			}
-
-			&-md {
-				font-size: 2em;
-			}
-
-			&-sm {
-				font-size: 1.5em;
-			}
-
-			&-xs {
-				font-size: 1.25em;
-			}
-
-			&-2xs {
-				font-size: 1em;
-			}
-
-			&-3xs {
-				font-size: 0.75em;
-			}
-		}
-	}
-}
-
-.md {
-	@media (max-width: $screen-md) {
-		&\:title {
-			&-lg {
-				font-size: 2.5em;
-			}
-
-			&-md {
-				font-size: 2em;
-			}
-
-			&-sm {
-				font-size: 1.5em;
-			}
-
-			&-xs {
-				font-size: 1.25em;
-			}
-
-			&-2xs {
-				font-size: 1em;
-			}
-
-			&-3xs {
-				font-size: 0.75em;
-			}
-		}
-	}
-}
-
-.sm {
-	@media (max-width: $screen-sm) {
-		&\:title {
-			&-lg {
-				font-size: 2.5em;
-			}
-
-			&-md {
-				font-size: 2em;
-			}
-
-			&-sm {
-				font-size: 1.5em;
-			}
-
-			&-xs {
-				font-size: 1.25em;
-			}
-
-			&-2xs {
-				font-size: 1em;
-			}
-
-			&-3xs {
-				font-size: 0.75em;
-			}
-		}
-	}
-}
-
-.font-size {
+// Mixin for text size
+@mixin font-size {
 	&-lg {
 		font-size: 1.25em;
 	}
@@ -209,284 +66,25 @@
 	}
 }
 
-.\32xl {
-	@media (max-width: $screen-2xl) {
-		&\:font-size {
-			&-lg {
-				font-size: 1.25em;
-			}
-
-			&-md {
-				font-size: 1em;
-			}
-
-			&-sm {
-				font-size: 0.75em;
-			}
-
-			&-xs {
-				font-size: 0.625em;
-			}
+@mixin text($property, $values...) {
+	@each $value in $values {
+		&-#{$property} {
+			text-#{$property}: $value !important;
 		}
 	}
 }
 
-.xl {
-	@media (max-width: $screen-xl) {
-		&\:font-size {
-			&-lg {
-				font-size: 1.25em;
-			}
-
-			&-md {
-				font-size: 1em;
-			}
-
-			&-sm {
-				font-size: 0.75em;
-			}
-
-			&-xs {
-				font-size: 0.625em;
-			}
-		}
-	}
-}
-
-.lg {
-	@media (max-width: $screen-lg) {
-		&\:font-size {
-			&-lg {
-				font-size: 1.25em;
-			}
-
-			&-md {
-				font-size: 1em;
-			}
-
-			&-sm {
-				font-size: 0.75em;
-			}
-
-			&-xs {
-				font-size: 0.625em;
-			}
-		}
-	}
-}
-
-.md {
-	@media (max-width: $screen-md) {
-		&\:font-size {
-			&-lg {
-				font-size: 1.25em;
-			}
-
-			&-md {
-				font-size: 1em;
-			}
-
-			&-sm {
-				font-size: 0.75em;
-			}
-
-			&-xs {
-				font-size: 0.625em;
-			}
-		}
-	}
-}
-
-.sm {
-	@media (max-width: $screen-sm) {
-		&\:font-size {
-			&-lg {
-				font-size: 1.25em;
-			}
-
-			&-md {
-				font-size: 1em;
-			}
-
-			&-sm {
-				font-size: 0.75em;
-			}
-
-			&-xs {
-				font-size: 0.625em;
-			}
-		}
-	}
-}
-
-.text {
-	&-align {
-		&-left {
-			text-align: left !important;
-		}
-		&-right {
-			text-align: right !important;
-		}
-		&-center {
-			text-align: center !important;
-		}
-		&-justify {
-			text-align: justify !important;
-		}
-	}
-
-	&-transform {
-		&-none {
-			text-transform: none !important;
-		}
-		&-capitalize {
-			text-transform: capitalize !important;
-		}
-		&-uppercase {
-			text-transform: uppercase !important;
-		}
-		&-lowercase {
-			text-transform: lowercase !important;
-		}
-		&-full-width {
-			text-transform: full-width !important;
-		}
-		&-full-size-kana {
-			text-transform: full-size-kana !important;
-		}
-	}
-
-	&-decoration {
-		&-underline {
-			text-decoration: underline !important;
-		}
-		&-overline {
-			text-decoration: overline !important;
-		}
-		&-none {
-			text-decoration: none !important;
-		}
-	}
-}
-
-.\32xl {
-	@media (max-width: $screen-2xl) {
-		&\:text {
-			&-align {
-				&-left {
-					text-align: left !important;
-				}
-				&-right {
-					text-align: right !important;
-				}
-				&-center {
-					text-align: center !important;
-				}
-				&-justify {
-					text-align: justify !important;
-				}
-			}
-		}
-	}
-}
-
-.xl {
-	@media (max-width: $screen-xl) {
-		&\:text {
-			&-align {
-				&-left {
-					text-align: left !important;
-				}
-				&-right {
-					text-align: right !important;
-				}
-				&-center {
-					text-align: center !important;
-				}
-				&-justify {
-					text-align: justify !important;
-				}
-			}
-		}
-	}
-}
-
-.lg {
-	@media (max-width: $screen-lg) {
-		&\:text {
-			&-align {
-				&-left {
-					text-align: left !important;
-				}
-				&-right {
-					text-align: right !important;
-				}
-				&-center {
-					text-align: center !important;
-				}
-				&-justify {
-					text-align: justify !important;
-				}
-			}
-		}
-	}
-}
-
-.md {
-	@media (max-width: $screen-md) {
-		&\:text {
-			&-align {
-				&-left {
-					text-align: left !important;
-				}
-				&-right {
-					text-align: right !important;
-				}
-				&-center {
-					text-align: center !important;
-				}
-				&-justify {
-					text-align: justify !important;
-				}
-			}
-		}
-	}
-}
-
-.sm {
-	@media (max-width: $screen-sm) {
-		&\:text {
-			&-align {
-				&-left {
-					text-align: left !important;
-				}
-				&-right {
-					text-align: right !important;
-				}
-				&-center {
-					text-align: center !important;
-				}
-				&-justify {
-					text-align: justify !important;
-				}
-			}
-		}
-	}
-}
-
-.font {
+@mixin font-style($property, $values...) {
 	&-style {
-		&-normal {
-			font-style: normal !important;
-		}
-		&-italic {
-			font-style: italic !important;
-		}
-		&-oblique {
-			font-style: oblique !important;
+		@each $value in $values {
+			&-#{$property} {
+				font-#{$property}: $value !important;
+			}
 		}
 	}
+}
 
+@mixin weight {
 	&-weight {
 		&-200,
 		&-extra-light {
@@ -533,6 +131,64 @@
 			font-weight: 1000 !important;
 		}
 	}
+}
+
+// Mixin for block content
+@mixin block-content {
+	&-sm {
+		gap: var(--block-content-sm);
+	}
+
+	&-md {
+		gap: var(--block-content-md);
+	}
+
+	&-lg {
+		gap: var(--block-content-lg);
+	}
+}
+
+.text-content {
+	width: 100%;
+	display: grid;
+	grid-auto-flow: row;
+	gap: 1em;
+	text-align: left;
+}
+
+:is(.title-lg, .title-md, .title-sm, .title-xs, .title-2xs, .title-3xs) {
+	font-weight: 700;
+}
+
+.title {
+	@include title-size;
+}
+// Responsive
+
+.font-size {
+	@include font-size;
+}
+// Responsive
+
+.text {
+	@include text(align, left, right, center, justify);
+	@include text(
+		transform,
+		none,
+		capitalize,
+		uppercase,
+		lowercase,
+		full-width,
+		full-size-kana
+	);
+	@include text(decoration, underline, overline, none);
+}
+// Responsive
+
+.font {
+	@include font-style(style, normal, italic, oblique);
+
+	@include weight;
 }
 
 .line {

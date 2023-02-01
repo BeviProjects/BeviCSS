@@ -1,9 +1,3 @@
 .ovf {
-	&-hidden {
-		overflow: hidden;
-	}
-
-	&-auto {
-		overflow: auto;
-	}
+	@include property(overflow, hidden, auto, scroll);
 }
