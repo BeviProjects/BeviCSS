@@ -19,7 +19,7 @@
 ### Stable version:
 
 ```bash
-https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0-beta/dist/compressed/bevi.css
+https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css
 ```
 
 ### last version
@@ -33,7 +33,7 @@ https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@latest/dist/compressed/bevi.css
 ```html
 <link
 	rel="stylesheet"
-	href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0-beta/dist/compressed/bevi.css"
+	href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css"
 />
 ```
 
