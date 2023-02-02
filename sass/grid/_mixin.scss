@@ -1,0 +1,24 @@
+@mixin ds-grid{
+  &-grid {
+    display: grid;
+  }
+}
+
+// Grid template property
+@mixin template($property) {
+	@for $i from 1 through 6 {
+		&-#{$i} {
+			grid-template-#{$property}: repeat($i, 1fr);
+		}
+	}
+}
+
+// Grid template variation
+@mixin grid-tpl {
+	&-col {
+		@include template(columns);
+	}
+	&-row {
+		@include template(rows);
+	}
+}
