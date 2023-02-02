@@ -1,0 +1,5 @@
+.font {
+	@include font-style(style, normal, italic, oblique);
+
+	@include weight;
+}
