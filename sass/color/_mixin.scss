@@ -1,0 +1,18 @@
+@mixin color($property, $color, $count) {
+	&-#{$color} {
+		@for $i from 1 through $count {
+			&-0#{$i} {
+				#{$property}: var(--bv-#{$color}-0#{$i});
+			}
+		}
+	}
+}
+@mixin color-hover($property, $color, $count) {
+	&-#{$color} {
+		@for $i from 1 through $count {
+			&-0#{$i}:hover {
+				#{$property}: var(--bv-#{$color}-0#{$i});
+			}
+		}
+	}
+}

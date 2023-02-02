@@ -1,0 +1,6 @@
+.ease {
+	@include timing-function(linear);
+  @include timing-function(in);
+  @include timing-function(in-out);
+  @include timing-function(out);
+}

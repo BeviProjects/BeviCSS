@@ -5,8 +5,40 @@ html {
 body {
 	text-rendering: optimizeLegibility;
 	font-family: var(--bv-font-text);
-	font-size: 1rem;
+	font-size: var(--bv-text-md);
 	line-height: 1.4;
 	-webkit-font-smoothing: antialiased;
 	color: var(--bv-gray-04);
+}
+
+:is(p, small, pre, li, cite, sub, sup) {
+	margin: 0;
+	font-size: var(--bv-text-md);
+}
+
+small {
+	font-size: var(--bv-text-sm);
+}
+
+:is(b, strong) {
+	font-weight: var(--bv-title-weight);
+}
+
+:is(sub, sup) {
+	position: relative;
+	vertical-align: baseline;
+}
+
+span {
+	display: inline-block;
+}
+
+:is(ul, ol) {
+	margin: 0;
+	padding: 0 0 0 2ch;
+	list-style-position: inside;
+}
+
+pre {
+	white-space: normal;
 }

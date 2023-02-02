@@ -1,31 +1,13 @@
-:is(p, small, pre, li, cite, sub, sup) {
-	margin: 0;
-	font-size: 1em;
-}
-
-small {
-	font-size: 0.75em;
-}
-
-:is(b, strong) {
-	font-weight: 700;
-}
-
-:is(sub, sup) {
-	position: relative;
-	vertical-align: baseline;
-}
-
-span {
-	display: inline-block;
-}
-
-:is(ul, ol) {
-	margin: 0;
-	padding: 0 0 0 2ch;
-	list-style-position: inside;
-}
-
-pre {
-	white-space: normal;
+.text {
+	@include text(align, left, right, center, justify);
+	@include text(
+		transform,
+		none,
+		capitalize,
+		uppercase,
+		lowercase,
+		full-width,
+		full-size-kana
+	);
+	@include text(decoration, underline, overline, none);
 }

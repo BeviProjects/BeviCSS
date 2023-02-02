@@ -1,22 +1,24 @@
-// Mixin for heading size
+// Mixin heading
 @mixin heading {
-	&#{1} {
-		font-size: 2.5em;
+	@for $i from 1 through 6 {
+		&#{$i} {
+			font-size: var(--bv-heading-0#{$i});
+		}
 	}
-	&#{2} {
-		font-size: 2em;
+}
+
+// Mixin display font size
+@mixin typography-display {
+	&-lg {
+		font-size: clamp(6em, 10vw, 12em);
 	}
-	&#{3} {
-		font-size: 1.5em;
+
+	&-md {
+		font-size: clamp(4.5em, 5vw, 6em);
 	}
-	&#{4} {
-		font-size: 1.25em;
-	}
-	&#{5} {
-		font-size: 1em;
-	}
-	&#{6} {
-		font-size: 0.75em;
+
+	&-sm {
+		font-size: 4.5em;
 	}
 }
 
@@ -66,6 +68,7 @@
 	}
 }
 
+// Mixin text
 @mixin text($property, $values...) {
 	@each $value in $values {
 		&-#{$property}-#{$value} {
@@ -74,6 +77,7 @@
 	}
 }
 
+// Mixin Style
 @mixin font-style($property, $values...) {
 	@each $value in $values {
 		&-#{$property}-#{$value} {
@@ -82,6 +86,7 @@
 	}
 }
 
+// Mixin font weight
 @mixin weight {
 	&-weight {
 		&-200,
@@ -143,52 +148,5 @@
 
 	&-lg {
 		gap: var(--block-content-lg);
-	}
-}
-
-.text-content {
-	width: 100%;
-	display: grid;
-	grid-auto-flow: row;
-	gap: 1em;
-	text-align: left;
-}
-
-:is(.title-lg, .title-md, .title-sm, .title-xs, .title-2xs, .title-3xs) {
-	font-weight: 700;
-}
-
-.title {
-	@include title-size;
-}
-.font-size {
-	@include font-size;
-}
-
-.text {
-	@include text(align, left, right, center, justify);
-	@include text(
-		transform,
-		none,
-		capitalize,
-		uppercase,
-		lowercase,
-		full-width,
-		full-size-kana
-	);
-	@include text(decoration, underline, overline, none);
-}
-
-.font {
-	@include font-style(style, normal, italic, oblique);
-
-	@include weight;
-}
-
-.line {
-	&-height {
-		&-1 {
-			line-height: 1;
-		}
 	}
 }

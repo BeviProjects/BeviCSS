@@ -1,3 +1,9 @@
+@mixin ds-grid{
+  &-grid {
+    display: grid;
+  }
+}
+
 // Grid template property
 @mixin template($property) {
 	@for $i from 1 through 6 {
@@ -15,30 +21,4 @@
 	&-row {
 		@include template(rows);
 	}
-}
-
-@mixin ds-grid{
-	&-grid {
-		display: grid;
-	}
-}
-
-.ds {
-	@include ds-grid;
-}
-
-.grid-flow {
-	&-row {
-		grid-auto-flow: row;
-	}
-	&-col {
-		grid-auto-flow: column;
-	}
-	&-dense {
-		grid-auto-flow: dense;
-	}
-}
-
-.grid-tpl {
-	@include grid-tpl;
 }

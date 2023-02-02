@@ -1,0 +1,6 @@
+.block-content{
+  display: flex;
+  flex-direction: column;
+
+  @include block-content
+}
