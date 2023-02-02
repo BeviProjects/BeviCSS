@@ -1,0 +1,16 @@
+@mixin duration($duration){
+  &-#{$duration} {
+		transition-duration: var(--bv-duration-#{$duration});
+	}
+}
+
+@mixin timing-function($timing){
+  &-#{$timing} {
+    @if $timing == linear{
+      transition-timing-function: $timing;
+    }
+    @else{
+      transition-timing-function: var(--bv-ease-#{$timing});
+    }
+	}
+}
