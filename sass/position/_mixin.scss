@@ -1,0 +1,10 @@
+@mixin direction($property) {
+	.#{$property} {
+		&-0 {
+			#{$property}: 0;
+		}
+		&-100 {
+			#{$property}: 100%;
+		}
+	}
+}
