@@ -2,11 +2,19 @@
 	&-#{$color} {
 		@for $i from 1 through $count {
 			&-0#{$i} {
-				#{$property}: var(--bv-#{$color}-0#{$i});
+				#{$property}: hsla(var(--bv-hsl-#{$color}-0#{$i}), var(--bv-opacity));
 			}
 		}
 	}
 }
+
+//	--bv-hsl-primary-01: 238, 33%, 20%;
+//	--bv-hsl-primary-02: 185, 72%, 50%;
+// 	--bv-hsl-primary-03: 0, 0%, 100%;
+// 	--bv-primary-01: hsla(var(--bv-hsl-primary-01), var(--bv-opacity));
+// 	--bv-primary-02: hsla(var(--bv-hsl-primary-02), var(--bv-opacity));
+// 	--bv-primary-03: hsla(var(--bv-hsl-primary-03), var(--bv-opacity));
+// 
 @mixin color-hover($property, $color, $count) {
 	&-#{$color} {
 		@for $i from 1 through $count {
