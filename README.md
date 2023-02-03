@@ -1,45 +1,49 @@
 <h1 align="center">BeviCSS</h1>
 
-<h3>A framework css for all Bevi developers</h3>
+<h3 align="center">O framwork css para desenvolvedores Bevi</h3>
+
+<h4 align="center">
+  <a href="https://github.com/BeviProjects/BeviCSS/wiki"><strong>Documentação</strong></a>
+</h4>
+
+<br />
+<br />
+<br />
+<br />
+
+## Como começar
 
 <br />
 
-<p align="center">
-  <a href="https://bevicssdoc.netlify.app/"><strong>Explore beta docs »</strong></a>
-</p>
-
-<br />
-
-## Quick start
-
-<br />
-
-### CDN
-
-### Stable version:
+### CDN Versão Estável:
 
 ```bash
 https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css
 ```
 
-### last version
-
-```bash
-https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@latest/dist/compressed/bevi.css
-```
+<br />
 
 ### Link HTML
 
 ```html
 <link
-	rel="stylesheet"
-	href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css"
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css"
 />
 ```
 
-<br />
-<br />
+<br/>
+
+### Link CSS
+
+```css
+@import url('https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css');
+```
+
+<br/>
+<br/>
+<br/>
 
 ---
 
-<i>This is a beta version</i>
+<i>Version 1.0</i>
