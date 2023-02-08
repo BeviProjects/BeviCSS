@@ -8,8 +8,8 @@ Framework css desenvolvido para Bevi
 @use 'sass:math';
 
 @import 'variable/_all';
-@import './mixin/prefix';
-@import './mixin/property';
+@import 'mixin/prefix';
+@import 'mixin/property';
 
 @import 'base/_all';
 @import 'typography/_all';
@@ -25,4 +25,4 @@ Framework css desenvolvido para Bevi
 @import 'helper/_all';
 @import 'scrollbar/_all';
 
-@import './responsive/all';
+@import 'responsive/all';
