@@ -327,13 +327,13 @@ h6,
   display: flex;
   flex-direction: column;
 }
-.block-content-sm {
+.block-content.sm {
   gap: var(--block-content-sm);
 }
-.block-content-md {
+.block-content.md {
   gap: var(--block-content-md);
 }
-.block-content-lg {
+.block-content.lg {
   gap: var(--block-content-lg);
 }
 
