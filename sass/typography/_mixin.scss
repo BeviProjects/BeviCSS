@@ -10,15 +10,15 @@
 // Mixin display font size
 @mixin typography-display {
 	&-lg {
-		font-size: clamp(6em, 10vw, 12em);
+		font-size: var(--bv-display-lg)
 	}
 
 	&-md {
-		font-size: clamp(4.5em, 5vw, 6em);
+		font-size: var(--bv-display-md)
 	}
 
 	&-sm {
-		font-size: 4.5em;
+		font-size: var(--bv-display-sm)
 	}
 }
 

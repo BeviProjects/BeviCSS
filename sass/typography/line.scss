@@ -1,6 +1,9 @@
 .line {
 	&-height {
-		&-1 {
+		&-normal {
+			line-height: 1.4;
+		}
+		&-none {
 			line-height: 1;
 		}
 	}

@@ -18,6 +18,10 @@
   --bv-heading-05: 1em;
   --bv-heading-06: 0.75em;
 
+	--bv-display-sm: 4.5em;
+	--bv-display-md: clamp(4.5em, 5vw, 6em);
+	--bv-display-lg: clamp(6em, 10vw, 12em);
+
   --bv-title-sm: 1.5em;
   --bv-title-md: 2em;
   --bv-title-lg: 2.5em;
