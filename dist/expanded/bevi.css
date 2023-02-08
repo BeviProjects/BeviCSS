@@ -66,6 +66,9 @@ Framework css desenvolvido para Bevi
   --bv-heading-04: 1.25em;
   --bv-heading-05: 1em;
   --bv-heading-06: 0.75em;
+  --bv-display-sm: 4.5em;
+  --bv-display-md: clamp(4.5em, 5vw, 6em);
+  --bv-display-lg: clamp(6em, 10vw, 12em);
   --bv-title-sm: 1.5em;
   --bv-title-md: 2em;
   --bv-title-lg: 2.5em;
@@ -248,13 +251,13 @@ h6,
 }
 
 .display-lg {
-  font-size: clamp(6em, 10vw, 12em);
+  font-size: var(--bv-display-lg);
 }
 .display-md {
-  font-size: clamp(4.5em, 5vw, 6em);
+  font-size: var(--bv-display-md);
 }
 .display-sm {
-  font-size: 4.5em;
+  font-size: var(--bv-display-sm);
 }
 
 :is(.title-lg, .title-md, .title-sm, .title-xs, .title-2xs, .title-3xs) {
@@ -334,14 +337,17 @@ h6,
   gap: var(--block-content-lg);
 }
 
-.font-style-normal {
-  font-style: normal !important;
+.font-size-lg {
+  font-size: 1.25em;
 }
-.font-style-italic {
-  font-style: italic !important;
+.font-size-md {
+  font-size: 1em;
 }
-.font-style-oblique {
-  font-style: oblique !important;
+.font-size-sm {
+  font-size: 0.75em;
+}
+.font-size-xs {
+  font-size: 0.625em;
 }
 .font-weight-200, .font-weight-extra-light {
   font-weight: 200 !important;
@@ -370,21 +376,20 @@ h6,
 .font-weight-1000, .font-weight-weight {
   font-weight: 1000 !important;
 }
-
-.font-size-lg {
-  font-size: 1.25em;
+.font-style-normal {
+  font-style: normal !important;
 }
-.font-size-md {
-  font-size: 1em;
+.font-style-italic {
+  font-style: italic !important;
 }
-.font-size-sm {
-  font-size: 0.75em;
-}
-.font-size-xs {
-  font-size: 0.625em;
+.font-style-oblique {
+  font-style: oblique !important;
 }
 
-.line-height-1 {
+.line-height-normal {
+  line-height: 1.4;
+}
+.line-height-none {
   line-height: 1;
 }
 
@@ -426,39 +431,35 @@ h6,
   flex-grow: 1;
   flex-shrink: 1;
 }
-.bv-col.is-0 {
-  flex: none;
-  width: 0%;
-}
-.bv-col.is-1 {
+.bv-col.is-01 {
   flex: none;
   width: 8.3333333333%;
 }
-.bv-col.is-2 {
+.bv-col.is-02 {
   flex: none;
   width: 16.6666666667%;
 }
-.bv-col.is-3 {
+.bv-col.is-03 {
   flex: none;
   width: 25%;
 }
-.bv-col.is-4 {
+.bv-col.is-04 {
   flex: none;
   width: 33.3333333333%;
 }
-.bv-col.is-5 {
+.bv-col.is-05 {
   flex: none;
   width: 41.6666666667%;
 }
-.bv-col.is-6 {
+.bv-col.is-06 {
   flex: none;
   width: 50%;
 }
-.bv-col.is-7 {
+.bv-col.is-07 {
   flex: none;
   width: 58.3333333333%;
 }
-.bv-col.is-8 {
+.bv-col.is-08 {
   flex: none;
   width: 66.6666666667%;
 }
@@ -1952,13 +1953,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .\32 xl\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .\32 xl\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .\32 xl\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .\32 xl\:title-lg {
     font-size: 2.5em;
@@ -2150,13 +2151,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .xl\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .xl\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .xl\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .xl\:title-lg {
     font-size: 2.5em;
@@ -2241,31 +2242,28 @@ input[type=radio]:where(.lg)::before {
   .bv-col {
     width: 100%;
   }
-  .bv-col.is-0 {
+  .bv-col.is-01 {
     width: 100%;
   }
-  .bv-col.is-1 {
+  .bv-col.is-02 {
     width: 100%;
   }
-  .bv-col.is-2 {
+  .bv-col.is-03 {
     width: 100%;
   }
-  .bv-col.is-3 {
+  .bv-col.is-04 {
     width: 100%;
   }
-  .bv-col.is-4 {
+  .bv-col.is-05 {
     width: 100%;
   }
-  .bv-col.is-5 {
+  .bv-col.is-06 {
     width: 100%;
   }
-  .bv-col.is-6 {
+  .bv-col.is-07 {
     width: 100%;
   }
-  .bv-col.is-7 {
-    width: 100%;
-  }
-  .bv-col.is-8 {
+  .bv-col.is-08 {
     width: 100%;
   }
   .bv-col.is-9 {
@@ -2393,13 +2391,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .lg\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .lg\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .lg\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .lg\:title-lg {
     font-size: 2.5em;
@@ -2591,13 +2589,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .md\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .md\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .md\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .md\:title-lg {
     font-size: 2.5em;
@@ -2789,13 +2787,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .sm\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .sm\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .sm\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .sm\:title-lg {
     font-size: 2.5em;
