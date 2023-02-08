@@ -4,31 +4,51 @@ Framework css desenvolvido para Bevi
 */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 :root {
+  --bv-opacity: 1;
   --bv-hsl-primary-01: 238, 33%, 20%;
   --bv-hsl-primary-02: 185, 72%, 50%;
   --bv-hsl-primary-03: 0, 0%, 100%;
-  --bv-primary-01: hsla(var(--bv-hsl-primary-01), 1);
-  --bv-primary-02: hsla(var(--bv-hsl-primary-02), 1);
-  --bv-primary-03: hsla(var(--bv-hsl-primary-03), 1);
-  --bv-secondary-01: hsla(258, 84%, 18%, 1);
-  --bv-secondary-02: hsla(92, 90%, 43%, 1);
-  --bv-secondary-03: hsla(230, 90%, 20%, 1);
-  --bv-secondary-04: hsla(45, 98%, 52%, 1);
-  --bv-violet-01: hsla(238, 32%, 80%, 1);
-  --bv-violet-02: hsla(238, 32%, 60%, 1);
-  --bv-violet-03: hsla(238, 32%, 40%, 1);
-  --bv-ciano-01: hsla(185, 72%, 90%, 1);
-  --bv-ciano-02: hsla(185, 72%, 70%, 1);
-  --bv-ciano-03: hsla(185, 100%, 50%, 1);
-  --bv-gray-01: hsla(0, 0%, 95%, 1);
-  --bv-gray-02: hsla(0, 0%, 80%, 1);
-  --bv-gray-03: hsla(0, 0%, 50%, 1);
-  --bv-gray-04: hsla(0, 0%, 20%, 1);
-  --bv-purple-01: hsla(258, 84%, 40%, 1);
-  --bv-lemon-01: hsla(92, 90%, 63%, 1);
-  --bv-blue-01: hsla(230, 90%, 60%, 1);
-  --bv-yellow-01: hsla(45, 98%, 72%, 1);
-  --bv-cherry-01: hsla(348, 92%, 42%, 1);
+  --bv-primary-01: hsla(var(--bv-hsl-primary-01), var(--bv-opacity));
+  --bv-primary-02: hsla(var(--bv-hsl-primary-02), var(--bv-opacity));
+  --bv-primary-03: hsla(var(--bv-hsl-primary-03), var(--bv-opacity));
+  --bv-hsl-secondary-01: 258, 84%, 18%;
+  --bv-hsl-secondary-02: 92, 90%, 43%;
+  --bv-hsl-secondary-03: 230, 90%, 20%;
+  --bv-hsl-secondary-04: 45, 98%, 52%;
+  --bv-secondary-01: hsla(var(--bv-hsl-secondary-01), var(--bv-opacity));
+  --bv-secondary-02: hsla(var(--bv-hsl-secondary-02), var(--bv-opacity));
+  --bv-secondary-03: hsla(var(--bv-hsl-secondary-03), var(--bv-opacity));
+  --bv-secondary-04: hsla(var(--bv-hsl-secondary-04), var(--bv-opacity));
+  --bv-hsl-violet-01: 238, 32%, 80%;
+  --bv-hsl-violet-02: 238, 32%, 60%;
+  --bv-hsl-violet-03: 238, 32%, 40%;
+  --bv-violet-01: hsla(var(--bv-hsl-violet-01), var(--bv-opacity));
+  --bv-violet-02: hsla(var(--bv-hsl-violet-02), var(--bv-opacity));
+  --bv-violet-03: hsla(var(--bv-hsl-violet-03), var(--bv-opacity));
+  --bv-hsl-ciano-01: 185, 72%, 90%;
+  --bv-hsl-ciano-02: 185, 72%, 70%;
+  --bv-hsl-ciano-03: 185, 100%, 50%;
+  --bv-ciano-01: hsla(var(--bv-hsl-ciano-01), var(--bv-opacity));
+  --bv-ciano-02: hsla(var(--bv-hsl-ciano-02), var(--bv-opacity));
+  --bv-ciano-03: hsla(var(--bv-hsl-ciano-03), var(--bv-opacity));
+  --bv-hsl-gray-01: 0, 0%, 95%;
+  --bv-hsl-gray-02: 0, 0%, 80%;
+  --bv-hsl-gray-03: 0, 0%, 50%;
+  --bv-hsl-gray-04: 0, 0%, 20%;
+  --bv-gray-01: hsla(var(--bv-hsl-gray-01), var(--bv-opacity));
+  --bv-gray-02: hsla(var(--bv-hsl-gray-02), var(--bv-opacity));
+  --bv-gray-03: hsla(var(--bv-hsl-gray-03), var(--bv-opacity));
+  --bv-gray-04: hsla(var(--bv-hsl-gray-04), var(--bv-opacity));
+  --bv-hsl-purple-01: 258, 84%, 40%;
+  --bv-purple-01: hsla(var(--bv-hsl-purple-01), var(--bv-opacity));
+  --bv-hsl-lemon-01: 92, 90%, 63%;
+  --bv-lemon-01: hsla(var(--bv-hsl-lemon-01), var(--bv-opacity));
+  --bv-hsl-blue-01: 230, 90%, 60%;
+  --bv-blue-01: hsla(var(--bv-hsl-blue-01), var(--bv-opacity));
+  --bv-hsl-yellow-01: 45, 98%, 72%;
+  --bv-yellow-01: hsla(var(--bv-hsl-yellow-01), var(--bv-opacity));
+  --bv-hsl-cherry-01: 348, 92%, 42%;
+  --bv-cherry-01: hsla(var(--bv-hsl-cherry-01), var(--bv-opacity));
 }
 
 :root {
@@ -46,6 +66,9 @@ Framework css desenvolvido para Bevi
   --bv-heading-04: 1.25em;
   --bv-heading-05: 1em;
   --bv-heading-06: 0.75em;
+  --bv-display-sm: 4.5em;
+  --bv-display-md: clamp(4.5em, 5vw, 6em);
+  --bv-display-lg: clamp(6em, 10vw, 12em);
   --bv-title-sm: 1.5em;
   --bv-title-md: 2em;
   --bv-title-lg: 2.5em;
@@ -228,13 +251,13 @@ h6,
 }
 
 .display-lg {
-  font-size: clamp(6em, 10vw, 12em);
+  font-size: var(--bv-display-lg);
 }
 .display-md {
-  font-size: clamp(4.5em, 5vw, 6em);
+  font-size: var(--bv-display-md);
 }
 .display-sm {
-  font-size: 4.5em;
+  font-size: var(--bv-display-sm);
 }
 
 :is(.title-lg, .title-md, .title-sm, .title-xs, .title-2xs, .title-3xs) {
@@ -314,14 +337,17 @@ h6,
   gap: var(--block-content-lg);
 }
 
-.font-style-normal {
-  font-style: normal !important;
+.font-size-lg {
+  font-size: 1.25em;
 }
-.font-style-italic {
-  font-style: italic !important;
+.font-size-md {
+  font-size: 1em;
 }
-.font-style-oblique {
-  font-style: oblique !important;
+.font-size-sm {
+  font-size: 0.75em;
+}
+.font-size-xs {
+  font-size: 0.625em;
 }
 .font-weight-200, .font-weight-extra-light {
   font-weight: 200 !important;
@@ -350,21 +376,20 @@ h6,
 .font-weight-1000, .font-weight-weight {
   font-weight: 1000 !important;
 }
-
-.font-size-lg {
-  font-size: 1.25em;
+.font-style-normal {
+  font-style: normal !important;
 }
-.font-size-md {
-  font-size: 1em;
+.font-style-italic {
+  font-style: italic !important;
 }
-.font-size-sm {
-  font-size: 0.75em;
-}
-.font-size-xs {
-  font-size: 0.625em;
+.font-style-oblique {
+  font-style: oblique !important;
 }
 
-.line-height-1 {
+.line-height-normal {
+  line-height: 1.4;
+}
+.line-height-none {
   line-height: 1;
 }
 
@@ -406,39 +431,35 @@ h6,
   flex-grow: 1;
   flex-shrink: 1;
 }
-.bv-col.is-0 {
-  flex: none;
-  width: 0%;
-}
-.bv-col.is-1 {
+.bv-col.is-01 {
   flex: none;
   width: 8.3333333333%;
 }
-.bv-col.is-2 {
+.bv-col.is-02 {
   flex: none;
   width: 16.6666666667%;
 }
-.bv-col.is-3 {
+.bv-col.is-03 {
   flex: none;
   width: 25%;
 }
-.bv-col.is-4 {
+.bv-col.is-04 {
   flex: none;
   width: 33.3333333333%;
 }
-.bv-col.is-5 {
+.bv-col.is-05 {
   flex: none;
   width: 41.6666666667%;
 }
-.bv-col.is-6 {
+.bv-col.is-06 {
   flex: none;
   width: 50%;
 }
-.bv-col.is-7 {
+.bv-col.is-07 {
   flex: none;
   width: 58.3333333333%;
 }
-.bv-col.is-8 {
+.bv-col.is-08 {
   flex: none;
   width: 66.6666666667%;
 }
@@ -658,137 +679,137 @@ h6,
 }
 
 .color-primary-01 {
-  color: var(--bv-primary-01);
+  color: hsla(var(--bv-hsl-primary-01), var(--bv-opacity));
 }
 .color-primary-02 {
-  color: var(--bv-primary-02);
+  color: hsla(var(--bv-hsl-primary-02), var(--bv-opacity));
 }
 .color-primary-03 {
-  color: var(--bv-primary-03);
+  color: hsla(var(--bv-hsl-primary-03), var(--bv-opacity));
 }
 .color-secondary-01 {
-  color: var(--bv-secondary-01);
+  color: hsla(var(--bv-hsl-secondary-01), var(--bv-opacity));
 }
 .color-secondary-02 {
-  color: var(--bv-secondary-02);
+  color: hsla(var(--bv-hsl-secondary-02), var(--bv-opacity));
 }
 .color-secondary-03 {
-  color: var(--bv-secondary-03);
+  color: hsla(var(--bv-hsl-secondary-03), var(--bv-opacity));
 }
 .color-secondary-04 {
-  color: var(--bv-secondary-04);
+  color: hsla(var(--bv-hsl-secondary-04), var(--bv-opacity));
 }
 .color-violet-01 {
-  color: var(--bv-violet-01);
+  color: hsla(var(--bv-hsl-violet-01), var(--bv-opacity));
 }
 .color-violet-02 {
-  color: var(--bv-violet-02);
+  color: hsla(var(--bv-hsl-violet-02), var(--bv-opacity));
 }
 .color-violet-03 {
-  color: var(--bv-violet-03);
+  color: hsla(var(--bv-hsl-violet-03), var(--bv-opacity));
 }
 .color-ciano-01 {
-  color: var(--bv-ciano-01);
+  color: hsla(var(--bv-hsl-ciano-01), var(--bv-opacity));
 }
 .color-ciano-02 {
-  color: var(--bv-ciano-02);
+  color: hsla(var(--bv-hsl-ciano-02), var(--bv-opacity));
 }
 .color-ciano-03 {
-  color: var(--bv-ciano-03);
+  color: hsla(var(--bv-hsl-ciano-03), var(--bv-opacity));
 }
 .color-gray-01 {
-  color: var(--bv-gray-01);
+  color: hsla(var(--bv-hsl-gray-01), var(--bv-opacity));
 }
 .color-gray-02 {
-  color: var(--bv-gray-02);
+  color: hsla(var(--bv-hsl-gray-02), var(--bv-opacity));
 }
 .color-gray-03 {
-  color: var(--bv-gray-03);
+  color: hsla(var(--bv-hsl-gray-03), var(--bv-opacity));
 }
 .color-gray-04 {
-  color: var(--bv-gray-04);
+  color: hsla(var(--bv-hsl-gray-04), var(--bv-opacity));
 }
 .color-purple-01 {
-  color: var(--bv-purple-01);
+  color: hsla(var(--bv-hsl-purple-01), var(--bv-opacity));
 }
 .color-lemon-01 {
-  color: var(--bv-lemon-01);
+  color: hsla(var(--bv-hsl-lemon-01), var(--bv-opacity));
 }
 .color-blue-01 {
-  color: var(--bv-blue-01);
+  color: hsla(var(--bv-hsl-blue-01), var(--bv-opacity));
 }
 .color-yellow-01 {
-  color: var(--bv-yellow-01);
+  color: hsla(var(--bv-hsl-yellow-01), var(--bv-opacity));
 }
 .color-cherry-01 {
-  color: var(--bv-cherry-01);
+  color: hsla(var(--bv-hsl-cherry-01), var(--bv-opacity));
 }
 
 .bgc-primary-01 {
-  background-color: var(--bv-primary-01);
+  background-color: hsla(var(--bv-hsl-primary-01), var(--bv-opacity));
 }
 .bgc-primary-02 {
-  background-color: var(--bv-primary-02);
+  background-color: hsla(var(--bv-hsl-primary-02), var(--bv-opacity));
 }
 .bgc-primary-03 {
-  background-color: var(--bv-primary-03);
+  background-color: hsla(var(--bv-hsl-primary-03), var(--bv-opacity));
 }
 .bgc-secondary-01 {
-  background-color: var(--bv-secondary-01);
+  background-color: hsla(var(--bv-hsl-secondary-01), var(--bv-opacity));
 }
 .bgc-secondary-02 {
-  background-color: var(--bv-secondary-02);
+  background-color: hsla(var(--bv-hsl-secondary-02), var(--bv-opacity));
 }
 .bgc-secondary-03 {
-  background-color: var(--bv-secondary-03);
+  background-color: hsla(var(--bv-hsl-secondary-03), var(--bv-opacity));
 }
 .bgc-secondary-04 {
-  background-color: var(--bv-secondary-04);
+  background-color: hsla(var(--bv-hsl-secondary-04), var(--bv-opacity));
 }
 .bgc-violet-01 {
-  background-color: var(--bv-violet-01);
+  background-color: hsla(var(--bv-hsl-violet-01), var(--bv-opacity));
 }
 .bgc-violet-02 {
-  background-color: var(--bv-violet-02);
+  background-color: hsla(var(--bv-hsl-violet-02), var(--bv-opacity));
 }
 .bgc-violet-03 {
-  background-color: var(--bv-violet-03);
+  background-color: hsla(var(--bv-hsl-violet-03), var(--bv-opacity));
 }
 .bgc-ciano-01 {
-  background-color: var(--bv-ciano-01);
+  background-color: hsla(var(--bv-hsl-ciano-01), var(--bv-opacity));
 }
 .bgc-ciano-02 {
-  background-color: var(--bv-ciano-02);
+  background-color: hsla(var(--bv-hsl-ciano-02), var(--bv-opacity));
 }
 .bgc-ciano-03 {
-  background-color: var(--bv-ciano-03);
+  background-color: hsla(var(--bv-hsl-ciano-03), var(--bv-opacity));
 }
 .bgc-gray-01 {
-  background-color: var(--bv-gray-01);
+  background-color: hsla(var(--bv-hsl-gray-01), var(--bv-opacity));
 }
 .bgc-gray-02 {
-  background-color: var(--bv-gray-02);
+  background-color: hsla(var(--bv-hsl-gray-02), var(--bv-opacity));
 }
 .bgc-gray-03 {
-  background-color: var(--bv-gray-03);
+  background-color: hsla(var(--bv-hsl-gray-03), var(--bv-opacity));
 }
 .bgc-gray-04 {
-  background-color: var(--bv-gray-04);
+  background-color: hsla(var(--bv-hsl-gray-04), var(--bv-opacity));
 }
 .bgc-purple-01 {
-  background-color: var(--bv-purple-01);
+  background-color: hsla(var(--bv-hsl-purple-01), var(--bv-opacity));
 }
 .bgc-lemon-01 {
-  background-color: var(--bv-lemon-01);
+  background-color: hsla(var(--bv-hsl-lemon-01), var(--bv-opacity));
 }
 .bgc-blue-01 {
-  background-color: var(--bv-blue-01);
+  background-color: hsla(var(--bv-hsl-blue-01), var(--bv-opacity));
 }
 .bgc-yellow-01 {
-  background-color: var(--bv-yellow-01);
+  background-color: hsla(var(--bv-hsl-yellow-01), var(--bv-opacity));
 }
 .bgc-cherry-01 {
-  background-color: var(--bv-cherry-01);
+  background-color: hsla(var(--bv-hsl-cherry-01), var(--bv-opacity));
 }
 
 .hover\:color-primary-01:hover {
@@ -922,6 +943,14 @@ h6,
 }
 .hover\:bgc-cherry-01:hover {
   background-color: var(--bv-cherry-01);
+}
+
+.opacity-70 {
+  --bv-opacity: 0.7;
+}
+
+.hover\:opacity-70 {
+  --bv-opacity: 0.7;
 }
 
 .m-00, .m-less {
@@ -1924,13 +1953,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .\32 xl\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .\32 xl\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .\32 xl\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .\32 xl\:title-lg {
     font-size: 2.5em;
@@ -2122,13 +2151,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .xl\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .xl\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .xl\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .xl\:title-lg {
     font-size: 2.5em;
@@ -2213,31 +2242,28 @@ input[type=radio]:where(.lg)::before {
   .bv-col {
     width: 100%;
   }
-  .bv-col.is-0 {
+  .bv-col.is-01 {
     width: 100%;
   }
-  .bv-col.is-1 {
+  .bv-col.is-02 {
     width: 100%;
   }
-  .bv-col.is-2 {
+  .bv-col.is-03 {
     width: 100%;
   }
-  .bv-col.is-3 {
+  .bv-col.is-04 {
     width: 100%;
   }
-  .bv-col.is-4 {
+  .bv-col.is-05 {
     width: 100%;
   }
-  .bv-col.is-5 {
+  .bv-col.is-06 {
     width: 100%;
   }
-  .bv-col.is-6 {
+  .bv-col.is-07 {
     width: 100%;
   }
-  .bv-col.is-7 {
-    width: 100%;
-  }
-  .bv-col.is-8 {
+  .bv-col.is-08 {
     width: 100%;
   }
   .bv-col.is-9 {
@@ -2365,13 +2391,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .lg\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .lg\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .lg\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .lg\:title-lg {
     font-size: 2.5em;
@@ -2563,13 +2589,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .md\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .md\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .md\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .md\:title-lg {
     font-size: 2.5em;
@@ -2761,13 +2787,13 @@ input[type=radio]:where(.lg)::before {
     grid-template-rows: repeat(6, 1fr);
   }
   .sm\:display-lg {
-    font-size: clamp(6em, 10vw, 12em);
+    font-size: var(--bv-display-lg);
   }
   .sm\:display-md {
-    font-size: clamp(4.5em, 5vw, 6em);
+    font-size: var(--bv-display-md);
   }
   .sm\:display-sm {
-    font-size: 4.5em;
+    font-size: var(--bv-display-sm);
   }
   .sm\:title-lg {
     font-size: 2.5em;

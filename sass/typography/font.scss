@@ -1,5 +1,9 @@
 .font {
-	@include font-style(style, normal, italic, oblique);
+	&-size {
+		@include font-size;
+	}
 
 	@include weight;
+	
+	@include font-style(style, normal, italic, oblique);
 }

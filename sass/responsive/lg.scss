@@ -5,9 +5,16 @@
 	.bv-col {
 		width: 100%;
 
-		@for $i from 0 through 12 {
-			&.is-#{$i} {
-				width: 100%;
+		@for $i from 1 through 12 {
+			@if $i < 9{
+				&.is-0#{$i} {
+					width: 100%
+				}
+			}
+			@else{
+				&.is-#{$i} {
+					width: 100%;
+				}
 			}
 		}
 	}
