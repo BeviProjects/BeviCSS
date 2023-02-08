@@ -139,14 +139,14 @@
 // Mixin for block content
 @mixin block-content {
 	&.sm {
-		gap: var(--block-content-sm);
+		gap: var(--bv-block-content-sm);
 	}
 
 	&.md {
-		gap: var(--block-content-md);
+		gap: var(--bv-block-content-md);
 	}
 
 	&.lg {
-		gap: var(--block-content-lg);
+		gap: var(--bv-block-content-lg);
 	}
 }
