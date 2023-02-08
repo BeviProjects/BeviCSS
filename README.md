@@ -15,10 +15,18 @@
 
 <br />
 
-### CDN Versão Estável:
+### CDN versão estável:
 
 ```bash
-https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css
+https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0.0/dist/compressed/bevi.css
+```
+
+<br />
+
+### CDN versão mais recente:
+
+```bash
+https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS/dist/compressed/bevi.css
 ```
 
 <br />
@@ -28,7 +36,7 @@ https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css"
+  href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0.0/dist/compressed/bevi.css"
 />
 ```
 
@@ -37,13 +45,9 @@ https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css
 ### Link CSS
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0/dist/compressed/bevi.css');
+@import url('https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0.0/dist/compressed/bevi.css');
 ```
 
 <br/>
 <br/>
 <br/>
-
----
-
-<i>Version 1.0</i>
