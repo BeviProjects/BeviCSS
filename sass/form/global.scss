@@ -1,14 +1,14 @@
 :where(button, input, textarea, select, a, a.btn),
 :where(input[type='file'])::file-selector-button {
 	--_text-color: var(--bv-gray-04);
-	--_text-size: 1em;
+	--_text-size: 1.25em;
 	--_text-weight: 600;
 	--_text-align: left;
 
-	--_padding-inline: 1rem;
 	--_padding-block: 1rem;
+	--_padding-inline: 0.5rem;
 
-	--_icon-size: 1rem;
+	--_icon-size: 0.80em;
 	--_icon-color: var(--_text-color);
 
 	--_background-color: var(--bv-gray-01);
@@ -82,10 +82,8 @@
 		input[type='reset'],
 		a.button
 	) {
-	svg path {
-		flex-shrink: 0;
-		stroke-linecap: round;
-		stroke-linejoin: round;
+	i {
+		font-size: var(--_icon-size);
 	}
 }
 

@@ -23,7 +23,6 @@
 	cursor: pointer;
 
 	&:where(:not(:active):hover) {
-		// --_shadow-color: 0, 0%, 80%;
 		box-shadow: var(--_border-content), var(--_offset-content);
 	}
 
@@ -50,7 +49,13 @@
 
 	&:where(.sm) {
 		--_padding-block: 0.5rem;
-		--_padding-inline: 0.5rem;
+		--_padding-inline: 0.25rem;
+		--_border-radius: var(--bv-radius-sm);
+	}
+
+	&:where(.lg) {
+		--_padding-inline: 1rem;
+		--_padding-block: 1.5rem;
 	}
 }
 
