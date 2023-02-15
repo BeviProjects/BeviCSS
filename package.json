@@ -15,7 +15,7 @@
 		"name": "André Luiz",
 		"email": "andre.aguiar@bevicred.com.br"
 	},
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/BeviProjects/BeviCSS/issues"
 	},
