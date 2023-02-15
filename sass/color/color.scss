@@ -1,8 +1,8 @@
 .color {
 	@include color(color, primary, 3);
 	@include color(color, secondary, 4);
-	@include color(color, 'violet', 3);
-	@include color(color, 'ciano', 3);
+	// @include color(color, 'violet', 3);
+	// @include color(color, 'ciano', 3);
 	@include color(color, 'gray', 4);
 	@include color(color, 'purple', 1);
 	@include color(color, 'lemon', 1);
@@ -14,8 +14,8 @@
 .bgc {
 	@include color(background-color, primary, 3);
 	@include color(background-color, secondary, 4);
-	@include color(background-color, 'violet', 3);
-	@include color(background-color, 'ciano', 3);
+	// @include color(background-color, 'violet', 3);
+	// @include color(background-color, 'ciano', 3);
 	@include color(background-color, 'gray', 4);
 	@include color(background-color, 'purple', 1);
 	@include color(background-color, 'lemon', 1);

@@ -19,18 +19,25 @@ Framework css desenvolvido para Bevi
   --bv-secondary-02: hsla(var(--bv-hsl-secondary-02), var(--bv-opacity));
   --bv-secondary-03: hsla(var(--bv-hsl-secondary-03), var(--bv-opacity));
   --bv-secondary-04: hsla(var(--bv-hsl-secondary-04), var(--bv-opacity));
-  --bv-hsl-violet-01: 238, 32%, 80%;
-  --bv-hsl-violet-02: 238, 32%, 60%;
-  --bv-hsl-violet-03: 238, 32%, 40%;
-  --bv-violet-01: hsla(var(--bv-hsl-violet-01), var(--bv-opacity));
-  --bv-violet-02: hsla(var(--bv-hsl-violet-02), var(--bv-opacity));
-  --bv-violet-03: hsla(var(--bv-hsl-violet-03), var(--bv-opacity));
-  --bv-hsl-ciano-01: 185, 72%, 90%;
-  --bv-hsl-ciano-02: 185, 72%, 70%;
-  --bv-hsl-ciano-03: 185, 100%, 50%;
-  --bv-ciano-01: hsla(var(--bv-hsl-ciano-01), var(--bv-opacity));
-  --bv-ciano-02: hsla(var(--bv-hsl-ciano-02), var(--bv-opacity));
-  --bv-ciano-03: hsla(var(--bv-hsl-ciano-03), var(--bv-opacity));
+  --bv-hsl-violet: 238, 32%;
+  --bv-violet-98: hsla(var(--bv-hsl-violet), 98%, var(--bv-opacity));
+  --bv-violet-80: hsla(var(--bv-hsl-violet), 80%, var(--bv-opacity));
+  --bv-violet-60: hsla(var(--bv-hsl-violet), 60%, var(--bv-opacity));
+  --bv-violet-40: hsla(var(--bv-hsl-violet), 40%, var(--bv-opacity));
+  --bv-violet-10: hsla(var(--bv-hsl-violet), 10%, var(--bv-opacity));
+  --bv-violet-01: var(--bv-violet-80);
+  --bv-violet-02: var(--bv-violet-60);
+  --bv-violet-03: var(--bv-violet-40);
+  --bv-hsl-ciano: 185, 72%;
+  --bv-hsl-ciano-dark: 185, 100%;
+  --bv-ciano-98: hsla(var(--bv-hsl-ciano), 98%, var(--bv-opacity));
+  --bv-ciano-90: hsla(var(--bv-hsl-ciano), 90%, var(--bv-opacity));
+  --bv-ciano-70: hsla(var(--bv-hsl-ciano), 70%, var(--bv-opacity));
+  --bv-ciano-50: hsla(var(--bv-hsl-ciano-dark), 50%, var(--bv-opacity));
+  --bv-ciano-30: hsla(var(--bv-hsl-ciano-dark), 30%, var(--bv-opacity));
+  --bv-ciano-01: hsla(var(--bv-hsl-ciano), 90%, var(--bv-opacity));
+  --bv-ciano-02: hsla(var(--bv-hsl-ciano), 70%, var(--bv-opacity));
+  --bv-ciano-03: hsla(var(--bv-hsl-ciano-dark), 50%, var(--bv-opacity));
   --bv-hsl-gray-01: 0, 0%, 95%;
   --bv-hsl-gray-02: 0, 0%, 80%;
   --bv-hsl-gray-03: 0, 0%, 50%;
@@ -699,24 +706,6 @@ h6,
 .color-secondary-04 {
   color: hsla(var(--bv-hsl-secondary-04), var(--bv-opacity));
 }
-.color-violet-01 {
-  color: hsla(var(--bv-hsl-violet-01), var(--bv-opacity));
-}
-.color-violet-02 {
-  color: hsla(var(--bv-hsl-violet-02), var(--bv-opacity));
-}
-.color-violet-03 {
-  color: hsla(var(--bv-hsl-violet-03), var(--bv-opacity));
-}
-.color-ciano-01 {
-  color: hsla(var(--bv-hsl-ciano-01), var(--bv-opacity));
-}
-.color-ciano-02 {
-  color: hsla(var(--bv-hsl-ciano-02), var(--bv-opacity));
-}
-.color-ciano-03 {
-  color: hsla(var(--bv-hsl-ciano-03), var(--bv-opacity));
-}
 .color-gray-01 {
   color: hsla(var(--bv-hsl-gray-01), var(--bv-opacity));
 }
@@ -766,24 +755,6 @@ h6,
 .bgc-secondary-04 {
   background-color: hsla(var(--bv-hsl-secondary-04), var(--bv-opacity));
 }
-.bgc-violet-01 {
-  background-color: hsla(var(--bv-hsl-violet-01), var(--bv-opacity));
-}
-.bgc-violet-02 {
-  background-color: hsla(var(--bv-hsl-violet-02), var(--bv-opacity));
-}
-.bgc-violet-03 {
-  background-color: hsla(var(--bv-hsl-violet-03), var(--bv-opacity));
-}
-.bgc-ciano-01 {
-  background-color: hsla(var(--bv-hsl-ciano-01), var(--bv-opacity));
-}
-.bgc-ciano-02 {
-  background-color: hsla(var(--bv-hsl-ciano-02), var(--bv-opacity));
-}
-.bgc-ciano-03 {
-  background-color: hsla(var(--bv-hsl-ciano-03), var(--bv-opacity));
-}
 .bgc-gray-01 {
   background-color: hsla(var(--bv-hsl-gray-01), var(--bv-opacity));
 }
@@ -812,6 +783,68 @@ h6,
   background-color: hsla(var(--bv-hsl-cherry-01), var(--bv-opacity));
 }
 
+.color-violet-98 {
+  color: hsla(var(--bv-hsl-violet), 98%, var(--bv-opacity));
+}
+.color-violet-01, .color-violet-80 {
+  color: hsla(var(--bv-hsl-violet), 80%, var(--bv-opacity));
+}
+.color-violet-02, .color-violet-60 {
+  color: hsla(var(--bv-hsl-violet), 60%, var(--bv-opacity));
+}
+.color-violet-03, .color-violet-40 {
+  color: hsla(var(--bv-hsl-violet), 40%, var(--bv-opacity));
+}
+.color-violet-10 {
+  color: hsla(var(--bv-hsl-violet), 10%, var(--bv-opacity));
+}
+.color-ciano-98 {
+  color: hsla(var(--bv-hsl-ciano), 98%, var(--bv-opacity));
+}
+.color-ciano-01, .color-ciano-90 {
+  color: hsla(var(--bv-hsl-ciano), 90%, var(--bv-opacity));
+}
+.color-ciano-02, .color-ciano-70 {
+  color: hsla(var(--bv-hsl-ciano), 70%, var(--bv-opacity));
+}
+.color-ciano-03, .color-ciano-50 {
+  color: hsla(var(--bv-hsl-ciano), 50%, var(--bv-opacity));
+}
+.color-ciano-30 {
+  color: hsla(var(--bv-hsl-ciano), 30%, var(--bv-opacity));
+}
+
+.bgc-violet-98 {
+  background-color: hsla(var(--bv-hsl-violet), 98%, var(--bv-opacity));
+}
+.bgc-violet-01, .bgc-violet-80 {
+  background-color: hsla(var(--bv-hsl-violet), 80%, var(--bv-opacity));
+}
+.bgc-violet-02, .bgc-violet-60 {
+  background-color: hsla(var(--bv-hsl-violet), 60%, var(--bv-opacity));
+}
+.bgc-violet-03, .bgc-violet-40 {
+  background-color: hsla(var(--bv-hsl-violet), 40%, var(--bv-opacity));
+}
+.bgc-violet-10 {
+  background-color: hsla(var(--bv-hsl-violet), 10%, var(--bv-opacity));
+}
+.bgc-ciano-98 {
+  background-color: hsla(var(--bv-hsl-ciano), 98%, var(--bv-opacity));
+}
+.bgc-ciano-01, .bgc-ciano-90 {
+  background-color: hsla(var(--bv-hsl-ciano), 90%, var(--bv-opacity));
+}
+.bgc-ciano-02, .bgc-ciano-70 {
+  background-color: hsla(var(--bv-hsl-ciano), 70%, var(--bv-opacity));
+}
+.bgc-ciano-03, .bgc-ciano-50 {
+  background-color: hsla(var(--bv-hsl-ciano), 50%, var(--bv-opacity));
+}
+.bgc-ciano-30 {
+  background-color: hsla(var(--bv-hsl-ciano), 30%, var(--bv-opacity));
+}
+
 .hover\:color-primary-01:hover {
   color: var(--bv-primary-01);
 }
@@ -832,24 +865,6 @@ h6,
 }
 .hover\:color-secondary-04:hover {
   color: var(--bv-secondary-04);
-}
-.hover\:color-violet-01:hover {
-  color: var(--bv-violet-01);
-}
-.hover\:color-violet-02:hover {
-  color: var(--bv-violet-02);
-}
-.hover\:color-violet-03:hover {
-  color: var(--bv-violet-03);
-}
-.hover\:color-ciano-01:hover {
-  color: var(--bv-ciano-01);
-}
-.hover\:color-ciano-02:hover {
-  color: var(--bv-ciano-02);
-}
-.hover\:color-ciano-03:hover {
-  color: var(--bv-ciano-03);
 }
 .hover\:color-gray-01:hover {
   color: var(--bv-gray-01);
@@ -899,24 +914,6 @@ h6,
 .hover\:bgc-secondary-04:hover {
   background-color: var(--bv-secondary-04);
 }
-.hover\:bgc-violet-01:hover {
-  background-color: var(--bv-violet-01);
-}
-.hover\:bgc-violet-02:hover {
-  background-color: var(--bv-violet-02);
-}
-.hover\:bgc-violet-03:hover {
-  background-color: var(--bv-violet-03);
-}
-.hover\:bgc-ciano-01:hover {
-  background-color: var(--bv-ciano-01);
-}
-.hover\:bgc-ciano-02:hover {
-  background-color: var(--bv-ciano-02);
-}
-.hover\:bgc-ciano-03:hover {
-  background-color: var(--bv-ciano-03);
-}
 .hover\:bgc-gray-01:hover {
   background-color: var(--bv-gray-01);
 }
@@ -943,6 +940,68 @@ h6,
 }
 .hover\:bgc-cherry-01:hover {
   background-color: var(--bv-cherry-01);
+}
+
+.hover\:color-violet-98:hover {
+  color: hsla(var(--bv-hsl-violet), 98%, var(--bv-opacity));
+}
+.hover\:color-violet-01:hover, .hover\:color-violet-80:hover {
+  color: hsla(var(--bv-hsl-violet), 80%, var(--bv-opacity));
+}
+.hover\:color-violet-02:hover, .hover\:color-violet-60:hover {
+  color: hsla(var(--bv-hsl-violet), 60%, var(--bv-opacity));
+}
+.hover\:color-violet-03:hover, .hover\:color-violet-40:hover {
+  color: hsla(var(--bv-hsl-violet), 40%, var(--bv-opacity));
+}
+.hover\:color-violet-10:hover {
+  color: hsla(var(--bv-hsl-violet), 10%, var(--bv-opacity));
+}
+.hover\:color-ciano-98:hover {
+  color: hsla(var(--bv-hsl-ciano), 98%, var(--bv-opacity));
+}
+.hover\:color-ciano-01:hover, .hover\:color-ciano-90:hover {
+  color: hsla(var(--bv-hsl-ciano), 90%, var(--bv-opacity));
+}
+.hover\:color-ciano-02:hover, .hover\:color-ciano-70:hover {
+  color: hsla(var(--bv-hsl-ciano), 70%, var(--bv-opacity));
+}
+.hover\:color-ciano-03:hover, .hover\:color-ciano-50:hover {
+  color: hsla(var(--bv-hsl-ciano), 50%, var(--bv-opacity));
+}
+.hover\:color-ciano-30:hover {
+  color: hsla(var(--bv-hsl-ciano), 30%, var(--bv-opacity));
+}
+
+.hover\:bgc-violet-98:hover {
+  background-color: hsla(var(--bv-hsl-violet), 98%, var(--bv-opacity));
+}
+.hover\:bgc-violet-01:hover, .hover\:bgc-violet-80:hover {
+  background-color: hsla(var(--bv-hsl-violet), 80%, var(--bv-opacity));
+}
+.hover\:bgc-violet-02:hover, .hover\:bgc-violet-60:hover {
+  background-color: hsla(var(--bv-hsl-violet), 60%, var(--bv-opacity));
+}
+.hover\:bgc-violet-03:hover, .hover\:bgc-violet-40:hover {
+  background-color: hsla(var(--bv-hsl-violet), 40%, var(--bv-opacity));
+}
+.hover\:bgc-violet-10:hover {
+  background-color: hsla(var(--bv-hsl-violet), 10%, var(--bv-opacity));
+}
+.hover\:bgc-ciano-98:hover {
+  background-color: hsla(var(--bv-hsl-ciano), 98%, var(--bv-opacity));
+}
+.hover\:bgc-ciano-01:hover, .hover\:bgc-ciano-90:hover {
+  background-color: hsla(var(--bv-hsl-ciano), 90%, var(--bv-opacity));
+}
+.hover\:bgc-ciano-02:hover, .hover\:bgc-ciano-70:hover {
+  background-color: hsla(var(--bv-hsl-ciano), 70%, var(--bv-opacity));
+}
+.hover\:bgc-ciano-03:hover, .hover\:bgc-ciano-50:hover {
+  background-color: hsla(var(--bv-hsl-ciano), 50%, var(--bv-opacity));
+}
+.hover\:bgc-ciano-30:hover {
+  background-color: hsla(var(--bv-hsl-ciano), 30%, var(--bv-opacity));
 }
 
 .opacity-70 {
@@ -980,6 +1039,30 @@ h6,
 .m-08 {
   padding: 2rem;
 }
+.m-09 {
+  padding: 2.25rem;
+}
+.m-10 {
+  padding: 2.5rem;
+}
+.m-11 {
+  padding: 2.75rem;
+}
+.m-12 {
+  padding: 3rem;
+}
+.m-13 {
+  padding: 3.25rem;
+}
+.m-14 {
+  padding: 3.5rem;
+}
+.m-15 {
+  padding: 3.75rem;
+}
+.m-16 {
+  padding: 4rem;
+}
 .mt-00, .mt-less {
   padding-top: 0rem;
 }
@@ -1006,6 +1089,30 @@ h6,
 }
 .mt-08 {
   padding-top: 2rem;
+}
+.mt-09 {
+  padding-top: 2.25rem;
+}
+.mt-10 {
+  padding-top: 2.5rem;
+}
+.mt-11 {
+  padding-top: 2.75rem;
+}
+.mt-12 {
+  padding-top: 3rem;
+}
+.mt-13 {
+  padding-top: 3.25rem;
+}
+.mt-14 {
+  padding-top: 3.5rem;
+}
+.mt-15 {
+  padding-top: 3.75rem;
+}
+.mt-16 {
+  padding-top: 4rem;
 }
 .mr-00, .mr-less {
   padding-right: 0rem;
@@ -1034,6 +1141,30 @@ h6,
 .mr-08 {
   padding-right: 2rem;
 }
+.mr-09 {
+  padding-right: 2.25rem;
+}
+.mr-10 {
+  padding-right: 2.5rem;
+}
+.mr-11 {
+  padding-right: 2.75rem;
+}
+.mr-12 {
+  padding-right: 3rem;
+}
+.mr-13 {
+  padding-right: 3.25rem;
+}
+.mr-14 {
+  padding-right: 3.5rem;
+}
+.mr-15 {
+  padding-right: 3.75rem;
+}
+.mr-16 {
+  padding-right: 4rem;
+}
 .mb-00, .mb-less {
   padding-bottom: 0rem;
 }
@@ -1060,6 +1191,30 @@ h6,
 }
 .mb-08 {
   padding-bottom: 2rem;
+}
+.mb-09 {
+  padding-bottom: 2.25rem;
+}
+.mb-10 {
+  padding-bottom: 2.5rem;
+}
+.mb-11 {
+  padding-bottom: 2.75rem;
+}
+.mb-12 {
+  padding-bottom: 3rem;
+}
+.mb-13 {
+  padding-bottom: 3.25rem;
+}
+.mb-14 {
+  padding-bottom: 3.5rem;
+}
+.mb-15 {
+  padding-bottom: 3.75rem;
+}
+.mb-16 {
+  padding-bottom: 4rem;
 }
 .ml-00, .ml-less {
   padding-left: 0rem;
@@ -1088,6 +1243,30 @@ h6,
 .ml-08 {
   padding-left: 2rem;
 }
+.ml-09 {
+  padding-left: 2.25rem;
+}
+.ml-10 {
+  padding-left: 2.5rem;
+}
+.ml-11 {
+  padding-left: 2.75rem;
+}
+.ml-12 {
+  padding-left: 3rem;
+}
+.ml-13 {
+  padding-left: 3.25rem;
+}
+.ml-14 {
+  padding-left: 3.5rem;
+}
+.ml-15 {
+  padding-left: 3.75rem;
+}
+.ml-16 {
+  padding-left: 4rem;
+}
 .m-block-00, .m-block-less {
   padding-block: 0rem;
 }
@@ -1115,6 +1294,30 @@ h6,
 .m-block-08 {
   padding-block: 2rem;
 }
+.m-block-09 {
+  padding-block: 2.25rem;
+}
+.m-block-10 {
+  padding-block: 2.5rem;
+}
+.m-block-11 {
+  padding-block: 2.75rem;
+}
+.m-block-12 {
+  padding-block: 3rem;
+}
+.m-block-13 {
+  padding-block: 3.25rem;
+}
+.m-block-14 {
+  padding-block: 3.5rem;
+}
+.m-block-15 {
+  padding-block: 3.75rem;
+}
+.m-block-16 {
+  padding-block: 4rem;
+}
 .m-inline-00, .m-inline-less {
   padding-inline: 0rem;
 }
@@ -1141,6 +1344,30 @@ h6,
 }
 .m-inline-08 {
   padding-inline: 2rem;
+}
+.m-inline-09 {
+  padding-inline: 2.25rem;
+}
+.m-inline-10 {
+  padding-inline: 2.5rem;
+}
+.m-inline-11 {
+  padding-inline: 2.75rem;
+}
+.m-inline-12 {
+  padding-inline: 3rem;
+}
+.m-inline-13 {
+  padding-inline: 3.25rem;
+}
+.m-inline-14 {
+  padding-inline: 3.5rem;
+}
+.m-inline-15 {
+  padding-inline: 3.75rem;
+}
+.m-inline-16 {
+  padding-inline: 4rem;
 }
 
 .p-00, .p-less {
@@ -1170,6 +1397,30 @@ h6,
 .p-08 {
   padding: 2rem;
 }
+.p-09 {
+  padding: 2.25rem;
+}
+.p-10 {
+  padding: 2.5rem;
+}
+.p-11 {
+  padding: 2.75rem;
+}
+.p-12 {
+  padding: 3rem;
+}
+.p-13 {
+  padding: 3.25rem;
+}
+.p-14 {
+  padding: 3.5rem;
+}
+.p-15 {
+  padding: 3.75rem;
+}
+.p-16 {
+  padding: 4rem;
+}
 .pt-00, .pt-less {
   padding-top: 0rem;
 }
@@ -1196,6 +1447,30 @@ h6,
 }
 .pt-08 {
   padding-top: 2rem;
+}
+.pt-09 {
+  padding-top: 2.25rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.pt-11 {
+  padding-top: 2.75rem;
+}
+.pt-12 {
+  padding-top: 3rem;
+}
+.pt-13 {
+  padding-top: 3.25rem;
+}
+.pt-14 {
+  padding-top: 3.5rem;
+}
+.pt-15 {
+  padding-top: 3.75rem;
+}
+.pt-16 {
+  padding-top: 4rem;
 }
 .pr-00, .pr-less {
   padding-right: 0rem;
@@ -1224,6 +1499,30 @@ h6,
 .pr-08 {
   padding-right: 2rem;
 }
+.pr-09 {
+  padding-right: 2.25rem;
+}
+.pr-10 {
+  padding-right: 2.5rem;
+}
+.pr-11 {
+  padding-right: 2.75rem;
+}
+.pr-12 {
+  padding-right: 3rem;
+}
+.pr-13 {
+  padding-right: 3.25rem;
+}
+.pr-14 {
+  padding-right: 3.5rem;
+}
+.pr-15 {
+  padding-right: 3.75rem;
+}
+.pr-16 {
+  padding-right: 4rem;
+}
 .pb-00, .pb-less {
   padding-bottom: 0rem;
 }
@@ -1250,6 +1549,30 @@ h6,
 }
 .pb-08 {
   padding-bottom: 2rem;
+}
+.pb-09 {
+  padding-bottom: 2.25rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+.pb-11 {
+  padding-bottom: 2.75rem;
+}
+.pb-12 {
+  padding-bottom: 3rem;
+}
+.pb-13 {
+  padding-bottom: 3.25rem;
+}
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+.pb-15 {
+  padding-bottom: 3.75rem;
+}
+.pb-16 {
+  padding-bottom: 4rem;
 }
 .pl-00, .pl-less {
   padding-left: 0rem;
@@ -1278,6 +1601,30 @@ h6,
 .pl-08 {
   padding-left: 2rem;
 }
+.pl-09 {
+  padding-left: 2.25rem;
+}
+.pl-10 {
+  padding-left: 2.5rem;
+}
+.pl-11 {
+  padding-left: 2.75rem;
+}
+.pl-12 {
+  padding-left: 3rem;
+}
+.pl-13 {
+  padding-left: 3.25rem;
+}
+.pl-14 {
+  padding-left: 3.5rem;
+}
+.pl-15 {
+  padding-left: 3.75rem;
+}
+.pl-16 {
+  padding-left: 4rem;
+}
 .p-block-00, .p-block-less {
   padding-block: 0rem;
 }
@@ -1305,6 +1652,30 @@ h6,
 .p-block-08 {
   padding-block: 2rem;
 }
+.p-block-09 {
+  padding-block: 2.25rem;
+}
+.p-block-10 {
+  padding-block: 2.5rem;
+}
+.p-block-11 {
+  padding-block: 2.75rem;
+}
+.p-block-12 {
+  padding-block: 3rem;
+}
+.p-block-13 {
+  padding-block: 3.25rem;
+}
+.p-block-14 {
+  padding-block: 3.5rem;
+}
+.p-block-15 {
+  padding-block: 3.75rem;
+}
+.p-block-16 {
+  padding-block: 4rem;
+}
 .p-inline-00, .p-inline-less {
   padding-inline: 0rem;
 }
@@ -1331,6 +1702,30 @@ h6,
 }
 .p-inline-08 {
   padding-inline: 2rem;
+}
+.p-inline-09 {
+  padding-inline: 2.25rem;
+}
+.p-inline-10 {
+  padding-inline: 2.5rem;
+}
+.p-inline-11 {
+  padding-inline: 2.75rem;
+}
+.p-inline-12 {
+  padding-inline: 3rem;
+}
+.p-inline-13 {
+  padding-inline: 3.25rem;
+}
+.p-inline-14 {
+  padding-inline: 3.5rem;
+}
+.p-inline-15 {
+  padding-inline: 3.75rem;
+}
+.p-inline-16 {
+  padding-inline: 4rem;
 }
 
 .duration-fast {
@@ -1378,12 +1773,12 @@ h6,
 :where(button, input, textarea, select, a, a.btn),
 :where(input[type=file])::file-selector-button {
   --_text-color: var(--bv-gray-04);
-  --_text-size: 1em;
+  --_text-size: 1.25em;
   --_text-weight: 600;
   --_text-align: left;
-  --_padding-inline: 1rem;
   --_padding-block: 1rem;
-  --_icon-size: 1rem;
+  --_padding-inline: 0.5rem;
+  --_icon-size: 0.80em;
   --_icon-color: var(--_text-color);
   --_background-color: var(--bv-gray-01);
   --_border-radius: var(--bv-radius-md);
@@ -1447,10 +1842,8 @@ h6,
 input[type=button],
 input[type=submit],
 input[type=reset],
-a.button) svg path {
-  flex-shrink: 0;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+a.button) i {
+  font-size: var(--_icon-size);
 }
 
 :where(input[type=checkbox], input[type=radio]) {
@@ -1559,7 +1952,17 @@ input[type=reset],
 a.button):where(.sm),
 :where(input[type=file])::file-selector-button:where(.sm) {
   --_padding-block: 0.5rem;
-  --_padding-inline: 0.5rem;
+  --_padding-inline: 0.25rem;
+  --_border-radius: var(--bv-radius-sm);
+}
+:where(button,
+input[type=button],
+input[type=submit],
+input[type=reset],
+a.button):where(.lg),
+:where(input[type=file])::file-selector-button:where(.lg) {
+  --_padding-inline: 1rem;
+  --_padding-block: 1.5rem;
 }
 
 a:not(.button) {
