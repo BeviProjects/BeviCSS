@@ -1,0 +1,13 @@
+:where(a) {
+	&:not(a.button) {
+		--_padding-inline: 4px;
+		--_padding-block: 4px;
+
+		--_border-size: 0rem;
+		--_border-color: transparent;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,26 +1,20 @@
-:where(button, input, textarea, select, a, a.btn),
+:where(button, input, textarea, select, a, a.button),
 :where(input[type='file'])::file-selector-button {
+	--_padding-block: 0rem;
+	--_padding-inline: 0rem;
+
+	--_background-color: transparent;
 	--_text-color: var(--bv-gray-04);
-	--_text-size: 1.25em;
-	--_text-weight: 600;
-	--_text-align: left;
-
-	--_padding-block: 1rem;
-	--_padding-inline: 0.5rem;
-
-	--_icon-size: 0.80em;
 	--_icon-color: var(--_text-color);
+	--_icon-size: var(--bv-text-form-md);
 
-	--_background-color: var(--bv-gray-01);
-
-	--_border-radius: var(--bv-radius-md);
 	--_border-size: 0.125rem;
-	--_border-color: var(--bv-gray-02);
+	--_border-color: var(--bv-gray-50);
 	--_border-content: inset 0rem 0rem 0rem var(--_border-size)
 		var(--_border-color);
 
 	--_offset-size: 0.25rem;
-	--_offset-color: 0, 0%, 50%;
+	--_offset-color: 0, 0%, 80%;
 	--_offset-strength: 0.25;
 	--_offset-content: 0rem 0rem 0rem var(--_offset-size)
 		hsla(var(--_offset-color), var(--_offset-strength));
@@ -40,11 +34,11 @@
 	--_transition: var(--_transition-motion-reduce);
 
 	font-family: var(--bv-font-form);
-	font-size: var(--_text-size);
-	font-weight: var(--_text-weight);
+	font-size: var(--bv-text-md);
+	font-weight: 600;
 	line-height: 1;
 	letter-spacing: inherit;
-	border-radius: var(--_border-radius);
+	text-decoration: none;
 
 	touch-action: manipulation;
 	user-select: none;
@@ -55,9 +49,9 @@
 	padding-inline: var(--_padding-inline);
 	padding-block: var(--_padding-block);
 	display: inline-flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	text-align: var(--_text-align);
+	text-align: left;
 	gap: 0.5rem;
 
 	background-color: var(--_background-color);
@@ -75,62 +69,16 @@
 	}
 }
 
-:where(
-		button,
-		input[type='button'],
-		input[type='submit'],
-		input[type='reset'],
-		a.button
-	) {
-	i {
-		font-size: var(--_icon-size);
-	}
-}
+:where(button, input, textarea, select, a, a.button)
+	> :where(i, svg, [data-icon]) {
+	color: var(--_icon-color);
+	font-size: var(--bv-icon-form-md);
 
-:where(input[type='checkbox'], input[type='radio']) {
-	--_padding-inline: 0;
-	--_padding-block: 0;
-	--_size: 1rem;
-	--_background-color: transparent;
-
-	width: var(--_size);
-	height: var(--_size);
-	cursor: pointer;
-	position: relative;
-
-	&::before {
-		--_icon-size: calc(var(--_size) - 0.5rem);
-		content: '';
-		opacity: 0;
-
-		width: var(--_icon-size);
-		height: var(--_icon-size);
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		transition: opacity var(--bv-duration-normal) var(--bv-ease-in-out);
+	&.icon-md {
+		font-size: var(--bv-icon-form-md);
 	}
 
-	&:where(:not(:active):hover) {
-		&::before {
-			opacity: 1;
-		}
-	}
-
-	&:checked {
-		--_border-color: var(--bv-primary-01);
-
-		&::before {
-			opacity: 1;
-		}
-	}
-
-	&:where(.lg) {
-		--_size: 2rem;
-
-		&::before {
-			--_icon-size: calc(var(--_size) - 1rem);
-		}
+	&.icon-lg {
+		font-size: var(--bv-icon-form-lg);
 	}
 }
