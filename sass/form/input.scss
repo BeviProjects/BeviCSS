@@ -1,11 +1,28 @@
-:where(input[type='text'], input[type='password'], input[type='email'], input[type='tel'], input[type='search'], input[type='number'], input[type='date'], input[type='datetime'], input[type='datetime-local'], select, textarea) {
-	--_padding-block: 0.8125rem;
+:where(
+		input[type='text'],
+		input[type='password'],
+		input[type='email'],
+		input[type='tel'],
+		input[type='search'],
+		input[type='number'],
+		input[type='date'],
+		input[type='datetime'],
+		input[type='datetime-local'],
+		select,
+		textarea
+	) {
+	--_padding-block: 13px;
+	--_padding-inline: 1rem;
+	--_border-color: transparent;
+	--_background-color: var(--bv-primary-03);
+
+	border-radius: 0.5rem;
 
 	cursor: text;
 	outline: none;
 
 	&:where(:not(:active)):focus-visible {
-		--_border-color: black;
+		--_border-color: var(--bv-gray-80);
 	}
 }
 

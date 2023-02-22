@@ -1,12 +1,12 @@
-:where(
-		button,
-		input[type='button'],
-		input[type='submit'],
-		input[type='reset'],
-		a.button
-	) {
-	--_border-color: var(--bv-gray-01);
-}
+// :where(
+// 		button,
+// 		input[type='button'],
+// 		input[type='submit'],
+// 		input[type='reset'],
+// 		a.button
+// 	) {
+// }
+
 :where(
 		button,
 		input[type='button'],
@@ -15,85 +15,70 @@
 		a.button
 	),
 :where(input[type='file'])::file-selector-button {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	--_padding-block: 1rem;
+	--_padding-inline: 1.5rem;
 
+	--_color: var(--bv-hsl-gray), 20%;
+
+	border-radius: var(--bv-radius-md);
 	cursor: pointer;
 
-	&:where(:not(:active):hover) {
+	--_text-color: hsl(var(--_color));
+	--_icon-color: hsl(var(--_color));
+	--_background-color: transparent;
+	--_border-color: hsl(var(--_color));
+	--_offset-color: var(--_color);
+
+	&:where(:not(:active, input[type='file']):hover) {
 		box-shadow: var(--_border-content), var(--_offset-content);
 	}
 
-	&:where(.light) {
-		--_background-color: var(--bv-primary-02);
-		--_border-color: var(--bv-primary-02);
-		--_offset-color: var(--bv-hsl-primary-02);
-	}
+	// Color variant
+	&:where(.primary, .dark) {
+		--_color: var(--bv-hsl-primary-01);
 
-	&:where(.dark) {
+		--_background-color: hsl(var(--_color));
 		--_text-color: var(--bv-primary-03);
 		--_icon-color: var(--bv-primary-03);
-		--_background-color: var(--bv-primary-01);
-		--_border-color: var(--bv-primary-01);
-		--_offset-color: var(--bv-hsl-primary-01);
+	}
+
+	&:where(.secondary, .light) {
+		--_color: var(--bv-hsl-primary-02);
+
+		--_background-color: hsl(var(--_color));
+		--_text-color: var(--bv-primary-01);
+		--_icon-color: var(--bv-primary-01);
+	}
+
+	&:where(.violet) {
+		--_color: var(--bv-hsl-violet), 60%;
+
+		--_background-color: hsl(var(--_color));
+		--_text-color: var(--bv-primary-03);
+		--_icon-color: var(--bv-primary-03);
 	}
 
 	&:where(.outlined) {
-		--_border-color: var(--bv-primary-02);
+		--_text-color: hsl(var(--_color));
+		--_icon-color: hsl(var(--_color));
 		--_background-color: transparent;
-		--_text-color: var(--bv-primary-02);
-		--_offset-color: var(--bv-hsl-primary-02);
+		--_border-color: hsl(var(--_color));
+		--_offset-color: var(--_color);
 	}
 
+	// Size variation
 	&:where(.sm) {
 		--_padding-block: 0.5rem;
-		--_padding-inline: 0.25rem;
-		--_border-radius: var(--bv-radius-sm);
+		--_padding-inline: 1rem;
 	}
 
 	&:where(.lg) {
-		--_padding-inline: 1rem;
 		--_padding-block: 1.5rem;
+		--_padding-inline: 2rem;
 	}
 }
 
-a {
-	&:not(.button) {
-		--_background-color: transparent;
-		--_padding-inline: 0.125rem;
-		--_padding-block: 0.0625rem;
-		--_border-size: 0;
-	}
-
-	&.button {
-		text-decoration: none;
-	}
-}
-
-input[type='file'] {
-	--_padding-inline: 0;
-	--_padding-block: 0;
-	padding-right: 0.5em;
-	inline-size: 100%;
-	max-inline-size: max-content;
-
-	&::file-selector-button {
-		--_offset-size: 0;
-		margin-right: 0.5rem;
-	}
-}
-
-:where(
-		button,
-		input[type='button'],
-		input[type='submit'],
-		input[type='reset']
-	)[disabled] {
-	--_background-color: var(--bv-gray-02);
-	--_text-color: var(--bv-gray-03);
-	--_offset-size: 0;
-
-	cursor: not-allowed;
+:where(input[type='file']) {
+	border-radius: var(--bv-radius-md);
+	padding-right: 0.5rem;
 }
