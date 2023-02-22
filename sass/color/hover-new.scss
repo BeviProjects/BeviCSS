@@ -37,6 +37,21 @@
       }
     }
   }
+
+  &-gray{
+		&-95:hover, &-01:hover{
+			color: hsla(var(--bv-hsl-gray), 95%, var(--bv-opacity));
+		}
+		&-02:hover, &-80:hover{
+			color: hsla(var(--bv-hsl-gray), 80%, var(--bv-opacity));
+		}
+		&-03:hover, &-50:hover{
+			color: hsla(var(--bv-hsl-gray), 50%, var(--bv-opacity));
+		}
+		&-04:hover, &-20:hover{
+			color: hsla(var(--bv-hsl-gray), 20%, var(--bv-opacity));
+		}
+	}
 }
 
 .hover{
@@ -74,6 +89,21 @@
       }
       &-30:hover{
         background-color: hsla(var(--bv-hsl-ciano), 30%, var(--bv-opacity));
+      }
+    }
+
+    &-gray{
+      &-95:hover, &-01:hover{
+        background-color: hsla(var(--bv-hsl-gray), 95%, var(--bv-opacity));
+      }
+      &-02:hover, &-80:hover{
+        background-color: hsla(var(--bv-hsl-gray), 80%, var(--bv-opacity));
+      }
+      &-03:hover, &-50:hover{
+        background-color: hsla(var(--bv-hsl-gray), 50%, var(--bv-opacity));
+      }
+      &-04:hover, &-20:hover{
+        background-color: hsla(var(--bv-hsl-gray), 20%, var(--bv-opacity));
       }
     }
   }

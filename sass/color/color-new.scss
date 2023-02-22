@@ -34,6 +34,21 @@
 			color: hsla(var(--bv-hsl-ciano), 30%, var(--bv-opacity));
     }
 	}
+
+	&-gray{
+		&-95, &-01{
+			color: hsla(var(--bv-hsl-gray), 95%, var(--bv-opacity));
+		}
+		&-02, &-80{
+			color: hsla(var(--bv-hsl-gray), 80%, var(--bv-opacity));
+		}
+		&-03, &-50{
+			color: hsla(var(--bv-hsl-gray), 50%, var(--bv-opacity));
+		}
+		&-04, &-20{
+			color: hsla(var(--bv-hsl-gray), 20%, var(--bv-opacity));
+		}
+	}
 }
 
 .bgc{
@@ -71,5 +86,20 @@
     &-30{
 			background-color: hsla(var(--bv-hsl-ciano), 30%, var(--bv-opacity));
     }
+	}
+
+	&-gray{
+		&-95, &-01{
+			background-color: hsla(var(--bv-hsl-gray), 95%, var(--bv-opacity));
+		}
+		&-02, &-80{
+			background-color: hsla(var(--bv-hsl-gray), 80%, var(--bv-opacity));
+		}
+		&-03, &-50{
+			background-color: hsla(var(--bv-hsl-gray), 50%, var(--bv-opacity));
+		}
+		&-04, &-20{
+			background-color: hsla(var(--bv-hsl-gray), 20%, var(--bv-opacity));
+		}
 	}
 }
