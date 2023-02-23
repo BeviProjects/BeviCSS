@@ -1,12 +1,3 @@
-// :where(
-// 		button,
-// 		input[type='button'],
-// 		input[type='submit'],
-// 		input[type='reset'],
-// 		a.button
-// 	) {
-// }
-
 :where(
 		button,
 		input[type='button'],
@@ -25,8 +16,8 @@
 
 	--_text-color: hsl(var(--_color));
 	--_icon-color: hsl(var(--_color));
-	--_background-color: transparent;
-	--_border-color: hsl(var(--_color));
+	--_background-color: var(--bv-gray-95);
+	--_border-color: var(--bv-gray-95);
 	--_offset-color: var(--_color);
 
 	&:where(:not(:active, input[type='file']):hover) {
@@ -40,6 +31,7 @@
 		--_background-color: hsl(var(--_color));
 		--_text-color: var(--bv-primary-03);
 		--_icon-color: var(--bv-primary-03);
+		--_border-color: hsl(var(--_color));
 	}
 
 	&:where(.secondary, .light) {
@@ -48,6 +40,7 @@
 		--_background-color: hsl(var(--_color));
 		--_text-color: var(--bv-primary-01);
 		--_icon-color: var(--bv-primary-01);
+		--_border-color: hsl(var(--_color));
 	}
 
 	&:where(.violet) {
@@ -56,6 +49,7 @@
 		--_background-color: hsl(var(--_color));
 		--_text-color: var(--bv-primary-03);
 		--_icon-color: var(--bv-primary-03);
+		--_border-color: hsl(var(--_color));
 	}
 
 	&:where(.outlined) {
@@ -65,20 +59,10 @@
 		--_border-color: hsl(var(--_color));
 		--_offset-color: var(--_color);
 	}
-
-	// Size variation
-	&:where(.sm) {
-		--_padding-block: 0.5rem;
-		--_padding-inline: 1rem;
-	}
-
-	&:where(.lg) {
-		--_padding-block: 1.5rem;
-		--_padding-inline: 2rem;
-	}
 }
 
 :where(input[type='file']) {
-	border-radius: var(--bv-radius-md);
+	--_border-color: var(--bv-gray-95);
 	padding-right: 0.5rem;
+	border-radius: var(--bv-radius-md);
 }

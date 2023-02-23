@@ -88,8 +88,6 @@ Framework css desenvolvido para Bevi
   --bv-block-content-sm: 0.5rem;
   --bv-block-content-md: 1rem;
   --bv-block-content-lg: 1.5rem;
-  --bv-icon-form-md: 1rem;
-  --bv-icon-form-lg: 1.25rem;
   --bv-radius-sm: 0.25rem;
   --bv-radius-md: 0.5rem;
   --bv-radius-lg: 0.75rem;
@@ -111,7 +109,7 @@ Framework css desenvolvido para Bevi
   --bv-ease-in: cubic-bezier(0.47, 0, 0.75, 0.71);
   --bv-ease-out: cubic-bezier(0.39, 0.57, 0.56, 1);
   --bv-ease-in-out: cubic-bezier(0.44, 0.05, 0.55, 0.95);
-  --bv-scrollbar-size: .75rem;
+  --bv-scrollbar-size: 0.75rem;
   --bv-scrollbar-background: var(--bv-gray-02);
   --bv-scrollbar-radius: var(--bv-radius-md);
   --bv-scrollbar-color: var(--bv-violet-03);
@@ -1810,7 +1808,6 @@ h6,
   --_background-color: transparent;
   --_text-color: var(--bv-gray-04);
   --_icon-color: var(--_text-color);
-  --_icon-size: var(--bv-text-form-md);
   --_border-size: 0.125rem;
   --_border-color: var(--bv-gray-50);
   --_border-content: inset 0rem 0rem 0rem var(--_border-size)
@@ -1869,13 +1866,6 @@ h6,
 
 :where(button, input, textarea, select, a, a.button) > :where(i, svg, [data-icon]) {
   color: var(--_icon-color);
-  font-size: var(--bv-icon-form-md);
-}
-:where(button, input, textarea, select, a, a.button) > :where(i, svg, [data-icon]).icon-md {
-  font-size: var(--bv-icon-form-md);
-}
-:where(button, input, textarea, select, a, a.button) > :where(i, svg, [data-icon]).icon-lg {
-  font-size: var(--bv-icon-form-lg);
 }
 
 :where(a):not(a.button) {
@@ -1901,8 +1891,8 @@ a.button),
   cursor: pointer;
   --_text-color: hsl(var(--_color));
   --_icon-color: hsl(var(--_color));
-  --_background-color: transparent;
-  --_border-color: hsl(var(--_color));
+  --_background-color: var(--bv-gray-95);
+  --_border-color: var(--bv-gray-95);
   --_offset-color: var(--_color);
 }
 :where(button,
@@ -1923,6 +1913,7 @@ a.button):where(.primary, .dark),
   --_background-color: hsl(var(--_color));
   --_text-color: var(--bv-primary-03);
   --_icon-color: var(--bv-primary-03);
+  --_border-color: hsl(var(--_color));
 }
 :where(button,
 input[type=button],
@@ -1934,6 +1925,7 @@ a.button):where(.secondary, .light),
   --_background-color: hsl(var(--_color));
   --_text-color: var(--bv-primary-01);
   --_icon-color: var(--bv-primary-01);
+  --_border-color: hsl(var(--_color));
 }
 :where(button,
 input[type=button],
@@ -1945,6 +1937,7 @@ a.button):where(.violet),
   --_background-color: hsl(var(--_color));
   --_text-color: var(--bv-primary-03);
   --_icon-color: var(--bv-primary-03);
+  --_border-color: hsl(var(--_color));
 }
 :where(button,
 input[type=button],
@@ -1958,28 +1951,11 @@ a.button):where(.outlined),
   --_border-color: hsl(var(--_color));
   --_offset-color: var(--_color);
 }
-:where(button,
-input[type=button],
-input[type=submit],
-input[type=reset],
-a.button):where(.sm),
-:where(input[type=file])::file-selector-button:where(.sm) {
-  --_padding-block: 0.5rem;
-  --_padding-inline: 1rem;
-}
-:where(button,
-input[type=button],
-input[type=submit],
-input[type=reset],
-a.button):where(.lg),
-:where(input[type=file])::file-selector-button:where(.lg) {
-  --_padding-block: 1.5rem;
-  --_padding-inline: 2rem;
-}
 
 :where(input[type=file]) {
-  border-radius: var(--bv-radius-md);
+  --_border-color: var(--bv-gray-95);
   padding-right: 0.5rem;
+  border-radius: var(--bv-radius-md);
 }
 
 :where(input[type=checkbox], input[type=radio]) {
