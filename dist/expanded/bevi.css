@@ -567,6 +567,12 @@ h6,
   align-items: baseline;
 }
 
+.flex-bgs {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
 .ds-grid {
   display: grid;
 }
