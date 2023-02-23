@@ -6,8 +6,8 @@
 		a.button
 	),
 :where(input[type='file'])::file-selector-button {
-	--_padding-block: 1rem;
-	--_padding-inline: 1.5rem;
+	--_padding-block: 1.5rem;
+	--_padding-inline: 1rem;
 
 	--_color: var(--bv-hsl-gray), 20%;
 
