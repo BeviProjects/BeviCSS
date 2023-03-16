@@ -496,6 +496,16 @@ h6,
   align-items: center;
   justify-content: center;
 }
+.ds-flex-start {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.ds-flex-end {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
 .ds-inline-flex {
   display: inline-flex;
 }
@@ -503,6 +513,16 @@ h6,
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.ds-inline-flex-start {
+  display: inline-flex;
+  align-items: start;
+  justify-content: start;
+}
+.ds-inline-flex-end {
+  display: inline-flex;
+  align-items: end;
+  justify-content: end;
 }
 
 .flow-row-wr {
@@ -2368,6 +2388,16 @@ textarea):where(:not(:active)):focus-visible {
     align-items: center;
     justify-content: center;
   }
+  .\32 xl\:ds-flex-start {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .\32 xl\:ds-flex-end {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
   .\32 xl\:ds-inline-flex {
     display: inline-flex;
   }
@@ -2375,6 +2405,16 @@ textarea):where(:not(:active)):focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+  .\32 xl\:ds-inline-flex-start {
+    display: inline-flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .\32 xl\:ds-inline-flex-end {
+    display: inline-flex;
+    align-items: end;
+    justify-content: end;
   }
   .\32 xl\:ds-grid {
     display: grid;
@@ -2566,6 +2606,16 @@ textarea):where(:not(:active)):focus-visible {
     align-items: center;
     justify-content: center;
   }
+  .xl\:ds-flex-start {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .xl\:ds-flex-end {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
   .xl\:ds-inline-flex {
     display: inline-flex;
   }
@@ -2573,6 +2623,16 @@ textarea):where(:not(:active)):focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+  .xl\:ds-inline-flex-start {
+    display: inline-flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .xl\:ds-inline-flex-end {
+    display: inline-flex;
+    align-items: end;
+    justify-content: end;
   }
   .xl\:ds-grid {
     display: grid;
@@ -2806,6 +2866,16 @@ textarea):where(:not(:active)):focus-visible {
     align-items: center;
     justify-content: center;
   }
+  .lg\:ds-flex-start {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .lg\:ds-flex-end {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
   .lg\:ds-inline-flex {
     display: inline-flex;
   }
@@ -2813,6 +2883,16 @@ textarea):where(:not(:active)):focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+  .lg\:ds-inline-flex-start {
+    display: inline-flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .lg\:ds-inline-flex-end {
+    display: inline-flex;
+    align-items: end;
+    justify-content: end;
   }
   .lg\:ds-grid {
     display: grid;
@@ -3004,6 +3084,16 @@ textarea):where(:not(:active)):focus-visible {
     align-items: center;
     justify-content: center;
   }
+  .md\:ds-flex-start {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .md\:ds-flex-end {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
   .md\:ds-inline-flex {
     display: inline-flex;
   }
@@ -3011,6 +3101,16 @@ textarea):where(:not(:active)):focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+  .md\:ds-inline-flex-start {
+    display: inline-flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .md\:ds-inline-flex-end {
+    display: inline-flex;
+    align-items: end;
+    justify-content: end;
   }
   .md\:ds-grid {
     display: grid;
@@ -3202,6 +3302,16 @@ textarea):where(:not(:active)):focus-visible {
     align-items: center;
     justify-content: center;
   }
+  .sm\:ds-flex-start {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .sm\:ds-flex-end {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
   .sm\:ds-inline-flex {
     display: inline-flex;
   }
@@ -3209,6 +3319,16 @@ textarea):where(:not(:active)):focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+  .sm\:ds-inline-flex-start {
+    display: inline-flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .sm\:ds-inline-flex-end {
+    display: inline-flex;
+    align-items: end;
+    justify-content: end;
   }
   .sm\:ds-grid {
     display: grid;

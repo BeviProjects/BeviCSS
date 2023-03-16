@@ -7,6 +7,16 @@
 			display: flex;
 			@include positioning(center);
 		}
+
+		&-start {
+			display: flex;
+			@include positioning(start);
+		}
+
+		&-end {
+			display: flex;
+			@include positioning(end);
+		}
 	}
 
 	&-inline-flex {
@@ -15,6 +25,16 @@
 		&-center {
 			display: inline-flex;
 			@include positioning(center);
+		}
+
+		&-start {
+			display: inline-flex;
+			@include positioning(start);
+		}
+
+		&-end {
+			display: inline-flex;
+			@include positioning(end);
 		}
 	}
 }
