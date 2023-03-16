@@ -712,6 +712,9 @@ h6,
   inset: 0;
 }
 
+.color-inherit {
+  color: inherit;
+}
 .color-primary-01 {
   color: hsla(var(--bv-hsl-primary-01), var(--bv-opacity));
 }
@@ -749,6 +752,9 @@ h6,
   color: hsla(var(--bv-hsl-cherry-01), var(--bv-opacity));
 }
 
+.bgc-inherit {
+  background-color: inherit;
+}
 .bgc-primary-01 {
   background-color: hsla(var(--bv-hsl-primary-01), var(--bv-opacity));
 }

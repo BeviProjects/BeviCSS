@@ -1,4 +1,7 @@
 .color {
+	&-inherit {
+		color: inherit;
+	}
 	@include color(color, primary, 3);
 	@include color(color, secondary, 4);
 	// @include color(color, 'violet', 3);
@@ -12,6 +15,9 @@
 }
 
 .bgc {
+	&-inherit {
+		background-color: inherit;
+	}
 	@include color(background-color, primary, 3);
 	@include color(background-color, secondary, 4);
 	// @include color(background-color, 'violet', 3);
