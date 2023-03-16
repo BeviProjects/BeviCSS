@@ -1949,6 +1949,18 @@ a.button):where(.secondary, .light),
 input[type=button],
 input[type=submit],
 input[type=reset],
+a.button):where(.white),
+:where(input[type=file])::file-selector-button:where(.white) {
+  --_color: var(--bv-hsl-primary-03);
+  --_background-color: hsl(var(--_color));
+  --_text-color: var(--bv-primary-01);
+  --_icon-color: var(--bv-primary-01);
+  --_border-color: hsl(var(--_color));
+}
+:where(button,
+input[type=button],
+input[type=submit],
+input[type=reset],
 a.button):where(.violet),
 :where(input[type=file])::file-selector-button:where(.violet) {
   --_color: var(--bv-hsl-violet), 60%;
