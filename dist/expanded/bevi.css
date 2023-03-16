@@ -1865,7 +1865,7 @@ h6,
 }
 
 :where(button, input, textarea, select, a, a.button) > :where(i, svg, [data-icon]) {
-  color: var(--_icon-color);
+  color: inherit;
 }
 
 :where(a):not(a.button) {
@@ -1902,6 +1902,24 @@ input[type=reset],
 a.button):where(:not(:active, input[type=file]):hover),
 :where(input[type=file])::file-selector-button:where(:not(:active, input[type=file]):hover) {
   box-shadow: var(--_border-content), var(--_offset-content);
+}
+:where(button,
+input[type=button],
+input[type=submit],
+input[type=reset],
+a.button):where(.sm),
+:where(input[type=file])::file-selector-button:where(.sm) {
+  --_padding-block: 0.5rem;
+  --_padding-inline: 1rem;
+}
+:where(button,
+input[type=button],
+input[type=submit],
+input[type=reset],
+a.button):where(.lg),
+:where(input[type=file])::file-selector-button:where(.lg) {
+  --_padding-block: 2rem;
+  --_padding-inline: 1rem;
 }
 :where(button,
 input[type=button],

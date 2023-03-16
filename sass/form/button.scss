@@ -24,6 +24,17 @@
 		box-shadow: var(--_border-content), var(--_offset-content);
 	}
 
+	// Size variant
+	&:where(.sm) {
+		--_padding-block: 0.5rem;
+		--_padding-inline: 1rem;
+	}
+
+	&:where(.lg) {
+		--_padding-block: 2rem;
+		--_padding-inline: 1rem;
+	}
+
 	// Color variant
 	&:where(.primary, .dark) {
 		--_color: var(--bv-hsl-primary-01);
