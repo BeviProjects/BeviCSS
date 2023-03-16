@@ -110,10 +110,10 @@ Framework css desenvolvido para Bevi
   --bv-ease-out: cubic-bezier(0.39, 0.57, 0.56, 1);
   --bv-ease-in-out: cubic-bezier(0.44, 0.05, 0.55, 0.95);
   --bv-scrollbar-size: 0.75rem;
-  --bv-scrollbar-background: var(--bv-gray-02);
+  --bv-scrollbar-background: var(--bv-gray-80);
   --bv-scrollbar-radius: var(--bv-radius-md);
-  --bv-scrollbar-color: var(--bv-violet-03);
-  --bv-scrollbar-color-hover: var(--bv-primary-01);
+  --bv-scrollbar-color: var(--bv-violet-60);
+  --bv-scrollbar-color-hover: var(--bv-violet-40);
 }
 
 :is(*, *::before, *::after) {
@@ -2339,13 +2339,13 @@ textarea):where(:not(:active)):focus-visible {
   background-color: transparent;
 }
 .bv-scrollbar::-webkit-scrollbar-track {
-  border: none;
+  border: 0;
   background-color: var(--bv-scrollbar-background);
   box-shadow: none;
 }
 .bv-scrollbar::-webkit-scrollbar-thumb {
+  border: 2px solid var(--bv-scrollbar-background);
   border-radius: var(--bv-scrollbar-radius);
-  border: 0;
   background-color: var(--bv-scrollbar-color);
 }
 .bv-scrollbar::-webkit-scrollbar-thumb:hover {
