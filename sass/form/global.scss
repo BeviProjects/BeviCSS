@@ -70,5 +70,5 @@
 
 :where(button, input, textarea, select, a, a.button)
 	> :where(i, svg, [data-icon]) {
-	color: var(--_icon-color);
+	color: inherit;
 }
