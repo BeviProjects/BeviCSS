@@ -1,0 +1,3 @@
+.all {
+	@include property(all, initial, inherit, unset, revert, revert-layer);
+}
