@@ -1,6 +1,6 @@
 {
 	"name": "bevicss",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "Framework css para Bevi",
 	"main": "index.js",
 	"scripts": {
