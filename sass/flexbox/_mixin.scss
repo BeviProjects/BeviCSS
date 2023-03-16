@@ -1,11 +1,11 @@
 // Display flex
-@mixin ds-flex{
+@mixin ds-flex {
 	&-flex {
 		display: flex;
 
 		&-center {
 			display: flex;
-			@include positioning-center;
+			@include positioning(center);
 		}
 	}
 
@@ -14,7 +14,7 @@
 
 		&-center {
 			display: inline-flex;
-			@include positioning-center;
+			@include positioning(center);
 		}
 	}
 }
@@ -55,7 +55,7 @@
 }
 
 // Justify content and Align items
-@mixin positioning($property) {
+@mixin positioning-start-center-end($property) {
 	&-start {
 		#{$property}: flex-start;
 	}
@@ -70,9 +70,9 @@
 }
 
 // Justify content and Align items - center
-@mixin positioning-center {
-	align-items: center;
-	justify-content: center;
+@mixin positioning($property) {
+	align-items: $property;
+	justify-content: $property;
 }
 
 // Justify content

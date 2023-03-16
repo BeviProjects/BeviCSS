@@ -1,4 +1,4 @@
 .align {
-	@include positioning(align-items);
+	@include positioning-start-center-end(align-items);
 	@include positioning-align;
 }

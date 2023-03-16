@@ -1,4 +1,4 @@
 .justify {
-	@include positioning(justify-content);
+	@include positioning-start-center-end(justify-content);
 	@include positioning-justify;
 }
