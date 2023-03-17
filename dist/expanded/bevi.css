@@ -899,18 +899,6 @@ h6,
 .hover\:color-secondary-04:hover {
   color: var(--bv-secondary-04);
 }
-.hover\:color-gray-01:hover {
-  color: var(--bv-gray-01);
-}
-.hover\:color-gray-02:hover {
-  color: var(--bv-gray-02);
-}
-.hover\:color-gray-03:hover {
-  color: var(--bv-gray-03);
-}
-.hover\:color-gray-04:hover {
-  color: var(--bv-gray-04);
-}
 .hover\:color-purple-01:hover {
   color: var(--bv-purple-01);
 }
@@ -946,18 +934,6 @@ h6,
 }
 .hover\:bgc-secondary-04:hover {
   background-color: var(--bv-secondary-04);
-}
-.hover\:bgc-gray-01:hover {
-  background-color: var(--bv-gray-01);
-}
-.hover\:bgc-gray-02:hover {
-  background-color: var(--bv-gray-02);
-}
-.hover\:bgc-gray-03:hover {
-  background-color: var(--bv-gray-03);
-}
-.hover\:bgc-gray-04:hover {
-  background-color: var(--bv-gray-04);
 }
 .hover\:bgc-purple-01:hover {
   background-color: var(--bv-purple-01);
@@ -1005,16 +981,16 @@ h6,
 .hover\:color-ciano-30:hover {
   color: hsla(var(--bv-hsl-ciano), 30%, var(--bv-opacity));
 }
-.hover-gray-95:hover, .hover-gray-01:hover {
+.hover\:color-gray-95:hover, .hover\:color-gray-01:hover {
   color: hsla(var(--bv-hsl-gray), 95%, var(--bv-opacity));
 }
-.hover-gray-02:hover, .hover-gray-80:hover {
+.hover\:color-gray-02:hover, .hover\:color-gray-80:hover {
   color: hsla(var(--bv-hsl-gray), 80%, var(--bv-opacity));
 }
-.hover-gray-03:hover, .hover-gray-50:hover {
+.hover\:color-gray-03:hover, .hover\:color-gray-50:hover {
   color: hsla(var(--bv-hsl-gray), 50%, var(--bv-opacity));
 }
-.hover-gray-04:hover, .hover-gray-20:hover {
+.hover\:color-gray-04:hover, .hover\:color-gray-20:hover {
   color: hsla(var(--bv-hsl-gray), 20%, var(--bv-opacity));
 }
 

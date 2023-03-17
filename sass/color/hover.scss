@@ -4,7 +4,7 @@
 		@include color-hover(color, secondary, 4);
 		// @include color-hover(color, 'violet', 3);
 		// @include color-hover(color, 'ciano', 3);
-		@include color-hover(color, 'gray', 4);
+		// @include color-hover(color, 'gray', 4);
 		@include color-hover(color, 'purple', 1);
 		@include color-hover(color, 'lemon', 1);
 		@include color-hover(color, 'blue', 1);
@@ -17,7 +17,7 @@
 		@include color-hover(background-color, secondary, 4);
 		// @include color-hover(background-color, 'violet', 3);
 		// @include color-hover(background-color, 'ciano', 3);
-		@include color-hover(background-color, 'gray', 4);
+		// @include color-hover(background-color, 'gray', 4);
 		@include color-hover(background-color, 'purple', 1);
 		@include color-hover(background-color, 'lemon', 1);
 		@include color-hover(background-color, 'blue', 1);
