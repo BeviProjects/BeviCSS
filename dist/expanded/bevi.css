@@ -260,6 +260,10 @@ h6,
   font-size: var(--bv-heading-06);
 }
 
+:is(.display-xl, .display-lg, .display-md, .display-sm, .display-xs) {
+  line-height: 1;
+}
+
 .display-xl {
   font-size: var(--bv-display-xl);
 }
@@ -278,6 +282,7 @@ h6,
 
 :is(.title-lg, .title-md, .title-sm, .title-xs, .title-2xs, .title-3xs) {
   font-weight: 700;
+  line-height: 1;
 }
 
 .title-lg {
