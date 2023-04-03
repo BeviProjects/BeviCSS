@@ -74,9 +74,11 @@ Framework css desenvolvido para Bevi
   --bv-heading-04: 1.25em;
   --bv-heading-05: 1em;
   --bv-heading-06: 0.75em;
-  --bv-display-sm: 4.5em;
-  --bv-display-md: clamp(4.5em, 5vw, 6em);
-  --bv-display-lg: clamp(6em, 10vw, 12em);
+  --bv-display-xs: 3em;
+  --bv-display-sm: 4em;
+  --bv-display-md: 4.5em;
+  --bv-display-lg: clamp(4.5em, 5vw, 6em);
+  --bv-display-xl: clamp(6em, 11vw, 12em);
   --bv-title-sm: 1.5em;
   --bv-title-md: 2em;
   --bv-title-lg: 2.5em;
@@ -258,6 +260,9 @@ h6,
   font-size: var(--bv-heading-06);
 }
 
+.display-xl {
+  font-size: var(--bv-display-xl);
+}
 .display-lg {
   font-size: var(--bv-display-lg);
 }
@@ -266,6 +271,9 @@ h6,
 }
 .display-sm {
   font-size: var(--bv-display-sm);
+}
+.display-xs {
+  font-size: var(--bv-display-xs);
 }
 
 :is(.title-lg, .title-md, .title-sm, .title-xs, .title-2xs, .title-3xs) {
@@ -2479,6 +2487,9 @@ textarea):where(:not(:active)):focus-visible {
   .\32 xl\:grid-tpl-row-6 {
     grid-template-rows: repeat(6, 1fr);
   }
+  .\32 xl\:display-xl {
+    font-size: var(--bv-display-xl);
+  }
   .\32 xl\:display-lg {
     font-size: var(--bv-display-lg);
   }
@@ -2487,6 +2498,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .\32 xl\:display-sm {
     font-size: var(--bv-display-sm);
+  }
+  .\32 xl\:display-xs {
+    font-size: var(--bv-display-xs);
   }
   .\32 xl\:title-lg {
     font-size: 2.5em;
@@ -2697,6 +2711,9 @@ textarea):where(:not(:active)):focus-visible {
   .xl\:grid-tpl-row-6 {
     grid-template-rows: repeat(6, 1fr);
   }
+  .xl\:display-xl {
+    font-size: var(--bv-display-xl);
+  }
   .xl\:display-lg {
     font-size: var(--bv-display-lg);
   }
@@ -2705,6 +2722,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .xl\:display-sm {
     font-size: var(--bv-display-sm);
+  }
+  .xl\:display-xs {
+    font-size: var(--bv-display-xs);
   }
   .xl\:title-lg {
     font-size: 2.5em;
@@ -2957,6 +2977,9 @@ textarea):where(:not(:active)):focus-visible {
   .lg\:grid-tpl-row-6 {
     grid-template-rows: repeat(6, 1fr);
   }
+  .lg\:display-xl {
+    font-size: var(--bv-display-xl);
+  }
   .lg\:display-lg {
     font-size: var(--bv-display-lg);
   }
@@ -2965,6 +2988,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .lg\:display-sm {
     font-size: var(--bv-display-sm);
+  }
+  .lg\:display-xs {
+    font-size: var(--bv-display-xs);
   }
   .lg\:title-lg {
     font-size: 2.5em;
@@ -3175,6 +3201,9 @@ textarea):where(:not(:active)):focus-visible {
   .md\:grid-tpl-row-6 {
     grid-template-rows: repeat(6, 1fr);
   }
+  .md\:display-xl {
+    font-size: var(--bv-display-xl);
+  }
   .md\:display-lg {
     font-size: var(--bv-display-lg);
   }
@@ -3183,6 +3212,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .md\:display-sm {
     font-size: var(--bv-display-sm);
+  }
+  .md\:display-xs {
+    font-size: var(--bv-display-xs);
   }
   .md\:title-lg {
     font-size: 2.5em;
@@ -3393,6 +3425,9 @@ textarea):where(:not(:active)):focus-visible {
   .sm\:grid-tpl-row-6 {
     grid-template-rows: repeat(6, 1fr);
   }
+  .sm\:display-xl {
+    font-size: var(--bv-display-xl);
+  }
   .sm\:display-lg {
     font-size: var(--bv-display-lg);
   }
@@ -3401,6 +3436,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .sm\:display-sm {
     font-size: var(--bv-display-sm);
+  }
+  .sm\:display-xs {
+    font-size: var(--bv-display-xs);
   }
   .sm\:title-lg {
     font-size: 2.5em;

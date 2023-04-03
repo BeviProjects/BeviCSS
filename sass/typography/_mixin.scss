@@ -9,16 +9,24 @@
 
 // Mixin display font size
 @mixin typography-display {
+	&-xl {
+		font-size: var(--bv-display-xl);
+	}
+
 	&-lg {
-		font-size: var(--bv-display-lg)
+		font-size: var(--bv-display-lg);
 	}
 
 	&-md {
-		font-size: var(--bv-display-md)
+		font-size: var(--bv-display-md);
 	}
 
 	&-sm {
-		font-size: var(--bv-display-sm)
+		font-size: var(--bv-display-sm);
+	}
+
+	&-xs {
+		font-size: var(--bv-display-xs);
 	}
 }
 
