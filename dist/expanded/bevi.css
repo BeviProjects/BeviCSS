@@ -598,6 +598,25 @@ h6,
   align-items: baseline;
 }
 
+.align-self-auto {
+  align-self: auto;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+.align-self-stretch {
+  align-self: stretch;
+}
+.align-self-baseline {
+  align-self: baseline;
+}
+
 .flex-bgs {
   flex-basis: 0;
   flex-grow: 1;

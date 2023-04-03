@@ -1,0 +1,7 @@
+.align-self {
+	&-auto {
+		align-self: auto;
+	}
+	@include positioning-start-center-end(align-self);
+	@include positioning-align(align-self);
+}

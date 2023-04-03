@@ -111,12 +111,12 @@
 }
 
 // Align items
-@mixin positioning-align {
+@mixin positioning-align($property) {
 	&-stretch {
-		align-items: stretch;
+		#{$property}: stretch;
 	}
 
 	&-baseline {
-		align-items: baseline;
+		#{$property}: baseline;
 	}
 }
