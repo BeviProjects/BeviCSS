@@ -1,0 +1,11 @@
+.list-style {
+	&-none {
+		list-style: none;
+	}
+	&-inside {
+		list-style: inside;
+	}
+	&-outside {
+		list-style: outside;
+	}
+}

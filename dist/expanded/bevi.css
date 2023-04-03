@@ -2239,6 +2239,16 @@ textarea):where(:not(:active)):focus-visible {
   display: inline-grid;
 }
 
+.list-style-none {
+  list-style: none;
+}
+.list-style-inside {
+  list-style: inside;
+}
+.list-style-outside {
+  list-style: outside;
+}
+
 .object-contain {
   object-fit: contain;
 }
