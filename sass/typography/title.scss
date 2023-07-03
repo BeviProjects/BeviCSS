@@ -1,8 +1,0 @@
-:is(.title-lg, .title-md, .title-sm, .title-xs, .title-2xs, .title-3xs) {
-	font-weight: 700;
-	line-height: 1;
-}
-
-.title {
-	@include title-size;
-}

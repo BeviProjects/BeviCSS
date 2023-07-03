@@ -1,7 +1,0 @@
-:is(.display-xl, .display-lg, .display-md, .display-sm, .display-xs) {
-	line-height: 1;
-}
-
-.display {
-	@include typography-display;
-}

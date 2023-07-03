@@ -1,10 +1,10 @@
-<h1 align="center">BeviCSS</h1>
-
-<h3 align="center">O framwork css para desenvolvedores Bevi</h3>
-
-<h4 align="center">
-  <a href="https://github.com/BeviProjects/BeviCSS/wiki"><strong>Documentação</strong></a>
-</h4>
+<img src='./public/doc/cover.png' title='BeviCSS' alt='Logo BeviCSS' />
+<div align="center">
+  <p>O framwork css para desenvolvedores Bevi</p>
+  	<span>
+		<a href="https://github.com/BeviProjects/BeviCSS/wiki"><strong>Documentação</strong></a>
+	</span>
+</div>
 
 <br />
 <br />
@@ -15,28 +15,12 @@
 
 <br />
 
-### CDN versão estável:
-
-```bash
-https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0.8/dist/compressed/bevi.css
-```
-
-<br />
-
-### CDN versão mais recente:
-
-```bash
-https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS/dist/compressed/bevi.css
-```
-
-<br />
-
 ### Link HTML
 
 ```html
 <link
-	rel="stylesheet"
-	href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0.8/dist/compressed/bevi.css"
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0.8/dist/compressed/bevi.css"
 />
 ```
 
