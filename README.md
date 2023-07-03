@@ -1,6 +1,6 @@
 <img src='./public/doc/cover.png' title='BeviCSS' alt='Logo BeviCSS' />
 <div align="center">
-  <p>O framwork css para desenvolvedores Bevi</p>
+  <h3>O framwork css para desenvolvedores Bevi</h3>
   	<span>
 		<a href="https://github.com/BeviProjects/BeviCSS/wiki"><strong>Documentação</strong></a>
 	</span>
