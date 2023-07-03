@@ -31,7 +31,3 @@
 ```css
 @import url('https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0.8/dist/compressed/bevi.css');
 ```
-
-<br/>
-<br/>
-<br/>
