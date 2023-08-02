@@ -20,7 +20,7 @@
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0.8/dist/compressed/bevi.css"
+  href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.1.0/dist/compressed/bevi.css"
 />
 ```
 
@@ -29,5 +29,5 @@
 ### Link CSS
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.0.8/dist/compressed/bevi.css');
+@import url('https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@v1.1.0/dist/compressed/bevi.css');
 ```
