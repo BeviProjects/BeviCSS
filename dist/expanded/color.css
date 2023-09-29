@@ -1,3 +1,59 @@
+:root {
+  --bv-opacity: 1;
+  --bv-hsl-primary-01: 238, 33%, 20%;
+  --bv-hsl-primary-02: 185, 72%, 50%;
+  --bv-hsl-primary-03: 0, 0%, 100%;
+  --bv-primary-01: hsla(var(--bv-hsl-primary-01), var(--bv-opacity));
+  --bv-primary-02: hsla(var(--bv-hsl-primary-02), var(--bv-opacity));
+  --bv-primary-03: hsla(var(--bv-hsl-primary-03), var(--bv-opacity));
+  --bv-hsl-secondary-01: 258, 84%, 18%;
+  --bv-hsl-secondary-02: 92, 90%, 43%;
+  --bv-hsl-secondary-03: 230, 90%, 20%;
+  --bv-hsl-secondary-04: 45, 98%, 52%;
+  --bv-secondary-01: hsla(var(--bv-hsl-secondary-01), var(--bv-opacity));
+  --bv-secondary-02: hsla(var(--bv-hsl-secondary-02), var(--bv-opacity));
+  --bv-secondary-03: hsla(var(--bv-hsl-secondary-03), var(--bv-opacity));
+  --bv-secondary-04: hsla(var(--bv-hsl-secondary-04), var(--bv-opacity));
+  --bv-hsl-violet: 238, 32%;
+  --bv-violet-98: hsla(var(--bv-hsl-violet), 98%, var(--bv-opacity));
+  --bv-violet-80: hsla(var(--bv-hsl-violet), 80%, var(--bv-opacity));
+  --bv-violet-60: hsla(var(--bv-hsl-violet), 60%, var(--bv-opacity));
+  --bv-violet-40: hsla(var(--bv-hsl-violet), 40%, var(--bv-opacity));
+  --bv-violet-10: hsla(var(--bv-hsl-violet), 10%, var(--bv-opacity));
+  --bv-violet-01: var(--bv-violet-80);
+  --bv-violet-02: var(--bv-violet-60);
+  --bv-violet-03: var(--bv-violet-40);
+  --bv-hsl-ciano: 185, 72%;
+  --bv-hsl-ciano-dark: 185, 100%;
+  --bv-ciano-98: hsla(var(--bv-hsl-ciano), 98%, var(--bv-opacity));
+  --bv-ciano-90: hsla(var(--bv-hsl-ciano), 90%, var(--bv-opacity));
+  --bv-ciano-70: hsla(var(--bv-hsl-ciano), 70%, var(--bv-opacity));
+  --bv-ciano-50: hsla(var(--bv-hsl-ciano-dark), 50%, var(--bv-opacity));
+  --bv-ciano-30: hsla(var(--bv-hsl-ciano-dark), 30%, var(--bv-opacity));
+  --bv-ciano-01: hsla(var(--bv-hsl-ciano), 90%, var(--bv-opacity));
+  --bv-ciano-02: hsla(var(--bv-hsl-ciano), 70%, var(--bv-opacity));
+  --bv-ciano-03: hsla(var(--bv-hsl-ciano-dark), 50%, var(--bv-opacity));
+  --bv-hsl-gray: 0, 0%;
+  --bv-gray-95: hsla(var(--bv-hsl-gray), 95%, var(--bv-opacity));
+  --bv-gray-80: hsla(var(--bv-hsl-gray), 80%, var(--bv-opacity));
+  --bv-gray-50: hsla(var(--bv-hsl-gray), 50%, var(--bv-opacity));
+  --bv-gray-20: hsla(var(--bv-hsl-gray), 20%, var(--bv-opacity));
+  --bv-gray-01: hsla(var(--bv-hsl-gray), 95%, var(--bv-opacity));
+  --bv-gray-02: hsla(var(--bv-hsl-gray), 80%, var(--bv-opacity));
+  --bv-gray-03: hsla(var(--bv-hsl-gray), 50%, var(--bv-opacity));
+  --bv-gray-04: hsla(var(--bv-hsl-gray), 20%, var(--bv-opacity));
+  --bv-hsl-purple-01: 258, 84%, 40%;
+  --bv-purple-01: hsla(var(--bv-hsl-purple-01), var(--bv-opacity));
+  --bv-hsl-lemon-01: 92, 90%, 63%;
+  --bv-lemon-01: hsla(var(--bv-hsl-lemon-01), var(--bv-opacity));
+  --bv-hsl-blue-01: 230, 90%, 60%;
+  --bv-blue-01: hsla(var(--bv-hsl-blue-01), var(--bv-opacity));
+  --bv-hsl-yellow-01: 45, 98%, 72%;
+  --bv-yellow-01: hsla(var(--bv-hsl-yellow-01), var(--bv-opacity));
+  --bv-hsl-cherry-01: 348, 92%, 42%;
+  --bv-cherry-01: hsla(var(--bv-hsl-cherry-01), var(--bv-opacity));
+}
+
 .bgc-inherit {
   background-color: inherit;
 }
