@@ -139,37 +139,37 @@
   background-color: hsla(var(--bv-hsl-cherry-01), var(--bv-opacity));
 }
 .bgc-gradient-01 {
-  background: linear-gradient(180deg, var(--bv-violet-60) 0%, var(--bv-violet-80) 100%);
+  background: var(--bv-gradient-01);
 }
 .bgc-gradient-02 {
-  background: linear-gradient(180deg, var(--bv-ciano-50) 0%, var(--bv-violet-60) 100%);
+  background: var(--bv-gradient-02);
 }
 .bgc-gradient-03 {
-  background: linear-gradient(259.09deg, var(--bv-primary-02) 10.2%, var(--bv-ciano-90) 74.47%);
+  background: var(--bv-gradient-03);
 }
 .bgc-gradient-04 {
-  background: linear-gradient(270deg, var(--bv-violet-40) 0%, #7779bb 100%);
+  background: var(--bv-gradient-04);
 }
 .bgc-gradient-05 {
-  background: linear-gradient(259.09deg, var(--bv-primary-02) 10.2%, var(--bv-ciano-70) 74.47%);
+  background: var(--bv-gradient-05);
 }
 .bgc-gradient-06 {
-  background: linear-gradient(270deg, var(--bv-primary-01) 0%, #444688 100%);
+  background: var(--bv-gradient-06);
 }
 .bgc-gradient-07 {
-  background: linear-gradient(270deg, var(--bv-secondary-03) 0%, var(--bv-primary-01) 100%);
+  background: var(--bv-gradient-07);
 }
 .bgc-gradient-08 {
-  background: linear-gradient(180deg, var(--bv-ciano-90) 0%, var(--bv-primary-03) 100%);
+  background: var(--bv-gradient-08);
 }
 .bgc-gradient-09 {
-  background: linear-gradient(180deg, var(--bv-gray-95) 0%, var(--bv-ciano-90) 100%);
+  background: var(--bv-gradient-09);
 }
 .bgc-gradient-10 {
-  background: linear-gradient(179.88deg, var(--bv-secondary-03) -82.93%, var(--bv-primary-01) 74.07%);
+  background: var(--bv-gradient-10);
 }
 .bgc-gradient-11 {
-  background: linear-gradient(180deg, var(--bv-violet-98) 0%, var(--bv-ciano-90) 96.2%);
+  background: var(--bv-gradient-11);
 }
 
 .hover\:bgc-primary-01:hover {

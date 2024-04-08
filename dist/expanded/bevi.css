@@ -57,6 +57,61 @@ Framework css desenvolvido para Bevi
   --bv-yellow-01: hsla(var(--bv-hsl-yellow-01), var(--bv-opacity));
   --bv-hsl-cherry-01: 348, 92%, 42%;
   --bv-cherry-01: hsla(var(--bv-hsl-cherry-01), var(--bv-opacity));
+  --bv-gradient-01: linear-gradient(
+  	180deg,
+  	var(--bv-violet-60) 0%,
+  	var(--bv-violet-80) 100%
+  );
+  --bv-gradient-02: linear-gradient(
+  	180deg,
+  	var(--bv-ciano-50) 0%,
+  	var(--bv-violet-60) 100%
+  );
+  --bv-gradient-03: linear-gradient(
+  	259.09deg,
+  	var(--bv-primary-02) 10.2%,
+  	var(--bv-ciano-90) 74.47%
+  );
+  --bv-gradient-04: linear-gradient(
+  	270deg,
+  	var(--bv-violet-40) 0%,
+  	#7779bb 100%
+  );
+  --bv-gradient-05: linear-gradient(
+  	259.09deg,
+  	var(--bv-primary-02) 10.2%,
+  	var(--bv-ciano-70) 74.47%
+  );
+  --bv-gradient-06: linear-gradient(
+  	270deg,
+  	var(--bv-primary-01) 0%,
+  	#444688 100%
+  );
+  --bv-gradient-07: linear-gradient(
+  	270deg,
+  	var(--bv-secondary-03) 0%,
+  	var(--bv-primary-01) 100%
+  );
+  --bv-gradient-08: linear-gradient(
+  	180deg,
+  	var(--bv-ciano-90) 0%,
+  	var(--bv-primary-03) 100%
+  );
+  --bv-gradient-09: linear-gradient(
+  	180deg,
+  	var(--bv-gray-95) 0%,
+  	var(--bv-ciano-90) 100%
+  );
+  --bv-gradient-10: linear-gradient(
+  	179.88deg,
+  	var(--bv-secondary-03) -82.93%,
+  	var(--bv-primary-01) 74.07%
+  );
+  --bv-gradient-11: linear-gradient(
+  	180deg,
+  	var(--bv-violet-98) 0%,
+  	var(--bv-ciano-90) 96.2%
+  );
   --0: 0rem;
   --1: 0.125rem;
   --2: 0.25rem;
@@ -688,23 +743,26 @@ h6,
   grid-template-rows: repeat(6, 1fr);
 }
 
-.gapless, .gap-0 {
-  gap: 0;
+.gap-02, .gap-3xs {
+  gap: var(--2);
 }
-.gap-xs {
-  gap: 0.25rem;
+.gap-04, .gap-xs {
+  gap: var(--4);
 }
-.gap-sm {
-  gap: 0.5rem;
+.gap-05, .gap-sm {
+  gap: var(--5);
 }
-.gap-md {
-  gap: 1rem;
+.gap-06, .gap-md {
+  gap: var(--6);
 }
-.gap-lg {
-  gap: 2rem;
+.gap-07, .gap-lg {
+  gap: var(--7);
 }
-.gap-xl {
-  gap: 4rem;
+.gap-08, .gap-xl {
+  gap: var(--8);
+}
+.gap-10, .gap-3xl {
+  gap: var(--10);
 }
 
 .ps-absolute {
@@ -723,29 +781,41 @@ h6,
   position: sticky;
 }
 
-.top-0 {
+.top-00 {
   top: 0;
+}
+.top-50 {
+  top: 50%;
 }
 .top-100 {
   top: 100%;
 }
 
-.bottom-0 {
+.bottom-00 {
   bottom: 0;
+}
+.bottom-50 {
+  bottom: 50%;
 }
 .bottom-100 {
   bottom: 100%;
 }
 
-.left-0 {
+.left-00 {
   left: 0;
+}
+.left-50 {
+  left: 50%;
 }
 .left-100 {
   left: 100%;
 }
 
-.right-0 {
+.right-00 {
   right: 0;
+}
+.right-50 {
+  right: 50%;
 }
 .right-100 {
   right: 100%;
@@ -843,37 +913,37 @@ h6,
   background-color: hsla(var(--bv-hsl-cherry-01), var(--bv-opacity));
 }
 .bgc-gradient-01 {
-  background: linear-gradient(180deg, var(--bv-violet-60) 0%, var(--bv-violet-80) 100%);
+  background: var(--bv-gradient-01);
 }
 .bgc-gradient-02 {
-  background: linear-gradient(180deg, var(--bv-ciano-50) 0%, var(--bv-violet-60) 100%);
+  background: var(--bv-gradient-02);
 }
 .bgc-gradient-03 {
-  background: linear-gradient(259.09deg, var(--bv-primary-02) 10.2%, var(--bv-ciano-90) 74.47%);
+  background: var(--bv-gradient-03);
 }
 .bgc-gradient-04 {
-  background: linear-gradient(270deg, var(--bv-violet-40) 0%, #7779bb 100%);
+  background: var(--bv-gradient-04);
 }
 .bgc-gradient-05 {
-  background: linear-gradient(259.09deg, var(--bv-primary-02) 10.2%, var(--bv-ciano-70) 74.47%);
+  background: var(--bv-gradient-05);
 }
 .bgc-gradient-06 {
-  background: linear-gradient(270deg, var(--bv-primary-01) 0%, #444688 100%);
+  background: var(--bv-gradient-06);
 }
 .bgc-gradient-07 {
-  background: linear-gradient(270deg, var(--bv-secondary-03) 0%, var(--bv-primary-01) 100%);
+  background: var(--bv-gradient-07);
 }
 .bgc-gradient-08 {
-  background: linear-gradient(180deg, var(--bv-ciano-90) 0%, var(--bv-primary-03) 100%);
+  background: var(--bv-gradient-08);
 }
 .bgc-gradient-09 {
-  background: linear-gradient(180deg, var(--bv-gray-95) 0%, var(--bv-ciano-90) 100%);
+  background: var(--bv-gradient-09);
 }
 .bgc-gradient-10 {
-  background: linear-gradient(179.88deg, var(--bv-secondary-03) -82.93%, var(--bv-primary-01) 74.07%);
+  background: var(--bv-gradient-10);
 }
 .bgc-gradient-11 {
-  background: linear-gradient(180deg, var(--bv-violet-98) 0%, var(--bv-ciano-90) 96.2%);
+  background: var(--bv-gradient-11);
 }
 
 .hover\:bgc-primary-01:hover {
@@ -1152,30 +1222,36 @@ h6,
   color: var(--bv-cherry-01);
 }
 
-.box-shadow-none {
+.bv-shadow-none {
   box-shadow: none;
 }
-.box-shadow-sm {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.02), 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+.bv-shadow-sm {
+  box-shadow: var(--bv-shadow-sm);
 }
-.box-shadow-md {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.02), 0px 3px 3px 0px rgba(0, 0, 0, 0.03), 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+.bv-shadow-md {
+  box-shadow: var(--bv-shadow-md);
 }
-.box-shadow-lg {
-  box-shadow: 0px 0px 64px 0px rgba(187, 188, 221, 0.08), 0px 3px 64px 0px rgba(187, 188, 221, 0.16);
+.bv-shadow-lg {
+  box-shadow: var(--bv-shadow-lg);
+}
+.bv-shadow-xl {
+  box-shadow: var(--bv-shadow-xl);
 }
 
-.hover\:box-shadow-none:hover {
+.hover\:bv-shadow-none:hover {
   box-shadow: none;
 }
-.hover\:box-shadow-sm:hover {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.02), 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+.hover\:bv-shadow-sm:hover {
+  box-shadow: var(--bv-shadow-sm);
 }
-.hover\:box-shadow-md:hover {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.02), 0px 3px 3px 0px rgba(0, 0, 0, 0.03), 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+.hover\:bv-shadow-md:hover {
+  box-shadow: var(--bv-shadow-md);
 }
-.hover\:box-shadow-lg:hover {
-  box-shadow: 0px 0px 64px 0px rgba(187, 188, 221, 0.08), 0px 3px 64px 0px rgba(187, 188, 221, 0.16);
+.hover\:bv-shadow-lg:hover {
+  box-shadow: var(--bv-shadow-lg);
+}
+.hover\:bv-shadow-xl:hover {
+  box-shadow: var(--bv-shadow-xl);
 }
 
 .m-00, .m-less {
@@ -2116,6 +2192,30 @@ a.button):where(.outlined),
   --_border-color: hsl(var(--_color));
   --_offset-color: var(--_color);
 }
+:where(button,
+input[type=button],
+input[type=submit],
+input[type=reset],
+a.button):where(:disabled),
+:where(input[type=file])::file-selector-button:where(:disabled) {
+  --_text-color: var(--bv-gray-50);
+  --_icon-color: var(--bv-gray-50);
+  --_background-color: var(--bv-gray-80);
+  --_border-color: var(--bv-gray-95);
+  --_border-color: transparent;
+  --_offset-size: 0;
+  cursor: no-drop;
+  opacity: 0.32;
+}
+:where(button,
+input[type=button],
+input[type=submit],
+input[type=reset],
+a.button):where(:disabled):where(.outlined),
+:where(input[type=file])::file-selector-button:where(:disabled):where(.outlined) {
+  --_background-color: transparent;
+  --_border-color: var(--bv-gray-50);
+}
 
 :where(input[type=file]) {
   --_border-color: var(--bv-gray-95);
@@ -2164,7 +2264,7 @@ a.button):where(.outlined),
 }
 
 :where(input[type=checkbox]) {
-  border-radius: var(--bv-radius-md);
+  border-radius: var(--bv-radius-xs);
 }
 :where(input[type=checkbox])::before {
   --_icon-hover: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.2131 13.4667C6.50976 14.1778 5.36119 14.1778 4.65785 13.4667L0.527504 9.29166C-0.175835 8.58059 -0.175835 7.41941 0.527504 6.70834C1.23084 5.99728 2.37942 5.99728 3.08276 6.70834L5.93483 9.59174L12.9172 2.5333C13.6206 1.82223 14.7692 1.82223 15.4725 2.5333C16.1758 3.24436 16.1758 4.40555 15.4725 5.11661L7.2131 13.4667Z' fill='%23CCCCCC'/%3E%3C/svg%3E");
@@ -2190,7 +2290,7 @@ a.button):where(.outlined),
 }
 :where(input[type=checkbox]).sm {
   --_border-size: 0.125rem;
-  border-radius: var(--bv-radius-sm);
+  border-radius: var(--bv-radius-3xs);
 }
 
 :where(input[type=radio]) {
@@ -2579,23 +2679,41 @@ textarea):where(:not(:active)):focus-visible {
   .\32 xl\:ds-grid {
     display: grid;
   }
-  .\32 xl\:gapless, .\32 xl\:gap-0 {
-    gap: 0;
+  .\32 xl\:gap-02, .\32 xl\:gap-3xs {
+    gap: var(--2);
   }
-  .\32 xl\:gap-xs {
-    gap: 0.25rem;
+  .\32 xl\:gap-04, .\32 xl\:gap-xs {
+    gap: var(--4);
   }
-  .\32 xl\:gap-sm {
-    gap: 0.5rem;
+  .\32 xl\:gap-05, .\32 xl\:gap-sm {
+    gap: var(--5);
   }
-  .\32 xl\:gap-md {
-    gap: 1rem;
+  .\32 xl\:gap-06, .\32 xl\:gap-md {
+    gap: var(--6);
   }
-  .\32 xl\:gap-lg {
-    gap: 2rem;
+  .\32 xl\:gap-07, .\32 xl\:gap-lg {
+    gap: var(--7);
   }
-  .\32 xl\:gap-xl {
-    gap: 4rem;
+  .\32 xl\:gap-08, .\32 xl\:gap-xl {
+    gap: var(--8);
+  }
+  .\32 xl\:gap-10, .\32 xl\:gap-3xl {
+    gap: var(--10);
+  }
+  .\32 xl\:ps-absolute {
+    position: absolute;
+  }
+  .\32 xl\:ps-fixed {
+    position: fixed;
+  }
+  .\32 xl\:ps-relative {
+    position: relative;
+  }
+  .\32 xl\:ps-static {
+    position: static;
+  }
+  .\32 xl\:ps-sticky {
+    position: sticky;
   }
   .\32 xl\:flow-row-wr {
     flex-flow: row wrap;
@@ -2620,6 +2738,39 @@ textarea):where(:not(:active)):focus-visible {
   }
   .\32 xl\:flow-col-reverse-nw {
     flex-flow: column-reverse nowrap;
+  }
+  .\32 xl\:justify-start {
+    justify-content: flex-start;
+  }
+  .\32 xl\:justify-center {
+    justify-content: center;
+  }
+  .\32 xl\:justify-end {
+    justify-content: flex-end;
+  }
+  .\32 xl\:justify-between {
+    justify-content: space-between;
+  }
+  .\32 xl\:justify-around {
+    justify-content: space-around;
+  }
+  .\32 xl\:justify-evenly {
+    justify-content: space-evenly;
+  }
+  .\32 xl\:align-start {
+    align-items: flex-start;
+  }
+  .\32 xl\:align-center {
+    align-items: center;
+  }
+  .\32 xl\:align-end {
+    align-items: flex-end;
+  }
+  .\32 xl\:align-stretch {
+    align-items: stretch;
+  }
+  .\32 xl\:align-baseline {
+    align-items: baseline;
   }
   .\32 xl\:grid-tpl-col-01 {
     grid-template-columns: repeat(1, 1fr);
@@ -3536,23 +3687,41 @@ textarea):where(:not(:active)):focus-visible {
   .xl\:ds-grid {
     display: grid;
   }
-  .xl\:gapless, .xl\:gap-0 {
-    gap: 0;
+  .xl\:gap-02, .xl\:gap-3xs {
+    gap: var(--2);
   }
-  .xl\:gap-xs {
-    gap: 0.25rem;
+  .xl\:gap-04, .xl\:gap-xs {
+    gap: var(--4);
   }
-  .xl\:gap-sm {
-    gap: 0.5rem;
+  .xl\:gap-05, .xl\:gap-sm {
+    gap: var(--5);
   }
-  .xl\:gap-md {
-    gap: 1rem;
+  .xl\:gap-06, .xl\:gap-md {
+    gap: var(--6);
   }
-  .xl\:gap-lg {
-    gap: 2rem;
+  .xl\:gap-07, .xl\:gap-lg {
+    gap: var(--7);
   }
-  .xl\:gap-xl {
-    gap: 4rem;
+  .xl\:gap-08, .xl\:gap-xl {
+    gap: var(--8);
+  }
+  .xl\:gap-10, .xl\:gap-3xl {
+    gap: var(--10);
+  }
+  .xl\:ps-absolute {
+    position: absolute;
+  }
+  .xl\:ps-fixed {
+    position: fixed;
+  }
+  .xl\:ps-relative {
+    position: relative;
+  }
+  .xl\:ps-static {
+    position: static;
+  }
+  .xl\:ps-sticky {
+    position: sticky;
   }
   .xl\:flow-row-wr {
     flex-flow: row wrap;
@@ -3577,6 +3746,39 @@ textarea):where(:not(:active)):focus-visible {
   }
   .xl\:flow-col-reverse-nw {
     flex-flow: column-reverse nowrap;
+  }
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
+  .xl\:justify-center {
+    justify-content: center;
+  }
+  .xl\:justify-end {
+    justify-content: flex-end;
+  }
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+  .xl\:justify-around {
+    justify-content: space-around;
+  }
+  .xl\:justify-evenly {
+    justify-content: space-evenly;
+  }
+  .xl\:align-start {
+    align-items: flex-start;
+  }
+  .xl\:align-center {
+    align-items: center;
+  }
+  .xl\:align-end {
+    align-items: flex-end;
+  }
+  .xl\:align-stretch {
+    align-items: stretch;
+  }
+  .xl\:align-baseline {
+    align-items: baseline;
   }
   .xl\:grid-tpl-col-01 {
     grid-template-columns: repeat(1, 1fr);
@@ -4538,23 +4740,41 @@ textarea):where(:not(:active)):focus-visible {
   .lg\:ds-grid {
     display: grid;
   }
-  .lg\:gapless, .lg\:gap-0 {
-    gap: 0;
+  .lg\:gap-02, .lg\:gap-3xs {
+    gap: var(--2);
   }
-  .lg\:gap-xs {
-    gap: 0.25rem;
+  .lg\:gap-04, .lg\:gap-xs {
+    gap: var(--4);
   }
-  .lg\:gap-sm {
-    gap: 0.5rem;
+  .lg\:gap-05, .lg\:gap-sm {
+    gap: var(--5);
   }
-  .lg\:gap-md {
-    gap: 1rem;
+  .lg\:gap-06, .lg\:gap-md {
+    gap: var(--6);
   }
-  .lg\:gap-lg {
-    gap: 2rem;
+  .lg\:gap-07, .lg\:gap-lg {
+    gap: var(--7);
   }
-  .lg\:gap-xl {
-    gap: 4rem;
+  .lg\:gap-08, .lg\:gap-xl {
+    gap: var(--8);
+  }
+  .lg\:gap-10, .lg\:gap-3xl {
+    gap: var(--10);
+  }
+  .lg\:ps-absolute {
+    position: absolute;
+  }
+  .lg\:ps-fixed {
+    position: fixed;
+  }
+  .lg\:ps-relative {
+    position: relative;
+  }
+  .lg\:ps-static {
+    position: static;
+  }
+  .lg\:ps-sticky {
+    position: sticky;
   }
   .lg\:flow-row-wr {
     flex-flow: row wrap;
@@ -4579,6 +4799,39 @@ textarea):where(:not(:active)):focus-visible {
   }
   .lg\:flow-col-reverse-nw {
     flex-flow: column-reverse nowrap;
+  }
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+  .lg\:justify-center {
+    justify-content: center;
+  }
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+  .lg\:justify-around {
+    justify-content: space-around;
+  }
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
+  }
+  .lg\:align-start {
+    align-items: flex-start;
+  }
+  .lg\:align-center {
+    align-items: center;
+  }
+  .lg\:align-end {
+    align-items: flex-end;
+  }
+  .lg\:align-stretch {
+    align-items: stretch;
+  }
+  .lg\:align-baseline {
+    align-items: baseline;
   }
   .lg\:grid-tpl-col-01 {
     grid-template-columns: repeat(1, 1fr);
@@ -5495,23 +5748,41 @@ textarea):where(:not(:active)):focus-visible {
   .md\:ds-grid {
     display: grid;
   }
-  .md\:gapless, .md\:gap-0 {
-    gap: 0;
+  .md\:gap-02, .md\:gap-3xs {
+    gap: var(--2);
   }
-  .md\:gap-xs {
-    gap: 0.25rem;
+  .md\:gap-04, .md\:gap-xs {
+    gap: var(--4);
   }
-  .md\:gap-sm {
-    gap: 0.5rem;
+  .md\:gap-05, .md\:gap-sm {
+    gap: var(--5);
   }
-  .md\:gap-md {
-    gap: 1rem;
+  .md\:gap-06, .md\:gap-md {
+    gap: var(--6);
   }
-  .md\:gap-lg {
-    gap: 2rem;
+  .md\:gap-07, .md\:gap-lg {
+    gap: var(--7);
   }
-  .md\:gap-xl {
-    gap: 4rem;
+  .md\:gap-08, .md\:gap-xl {
+    gap: var(--8);
+  }
+  .md\:gap-10, .md\:gap-3xl {
+    gap: var(--10);
+  }
+  .md\:ps-absolute {
+    position: absolute;
+  }
+  .md\:ps-fixed {
+    position: fixed;
+  }
+  .md\:ps-relative {
+    position: relative;
+  }
+  .md\:ps-static {
+    position: static;
+  }
+  .md\:ps-sticky {
+    position: sticky;
   }
   .md\:flow-row-wr {
     flex-flow: row wrap;
@@ -5536,6 +5807,39 @@ textarea):where(:not(:active)):focus-visible {
   }
   .md\:flow-col-reverse-nw {
     flex-flow: column-reverse nowrap;
+  }
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+  .md\:justify-center {
+    justify-content: center;
+  }
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+  .md\:align-start {
+    align-items: flex-start;
+  }
+  .md\:align-center {
+    align-items: center;
+  }
+  .md\:align-end {
+    align-items: flex-end;
+  }
+  .md\:align-stretch {
+    align-items: stretch;
+  }
+  .md\:align-baseline {
+    align-items: baseline;
   }
   .md\:grid-tpl-col-01 {
     grid-template-columns: repeat(1, 1fr);
@@ -6452,23 +6756,41 @@ textarea):where(:not(:active)):focus-visible {
   .sm\:ds-grid {
     display: grid;
   }
-  .sm\:gapless, .sm\:gap-0 {
-    gap: 0;
+  .sm\:gap-02, .sm\:gap-3xs {
+    gap: var(--2);
   }
-  .sm\:gap-xs {
-    gap: 0.25rem;
+  .sm\:gap-04, .sm\:gap-xs {
+    gap: var(--4);
   }
-  .sm\:gap-sm {
-    gap: 0.5rem;
+  .sm\:gap-05, .sm\:gap-sm {
+    gap: var(--5);
   }
-  .sm\:gap-md {
-    gap: 1rem;
+  .sm\:gap-06, .sm\:gap-md {
+    gap: var(--6);
   }
-  .sm\:gap-lg {
-    gap: 2rem;
+  .sm\:gap-07, .sm\:gap-lg {
+    gap: var(--7);
   }
-  .sm\:gap-xl {
-    gap: 4rem;
+  .sm\:gap-08, .sm\:gap-xl {
+    gap: var(--8);
+  }
+  .sm\:gap-10, .sm\:gap-3xl {
+    gap: var(--10);
+  }
+  .sm\:ps-absolute {
+    position: absolute;
+  }
+  .sm\:ps-fixed {
+    position: fixed;
+  }
+  .sm\:ps-relative {
+    position: relative;
+  }
+  .sm\:ps-static {
+    position: static;
+  }
+  .sm\:ps-sticky {
+    position: sticky;
   }
   .sm\:flow-row-wr {
     flex-flow: row wrap;
@@ -6493,6 +6815,39 @@ textarea):where(:not(:active)):focus-visible {
   }
   .sm\:flow-col-reverse-nw {
     flex-flow: column-reverse nowrap;
+  }
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+  .sm\:justify-center {
+    justify-content: center;
+  }
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+  .sm\:justify-around {
+    justify-content: space-around;
+  }
+  .sm\:justify-evenly {
+    justify-content: space-evenly;
+  }
+  .sm\:align-start {
+    align-items: flex-start;
+  }
+  .sm\:align-center {
+    align-items: center;
+  }
+  .sm\:align-end {
+    align-items: flex-end;
+  }
+  .sm\:align-stretch {
+    align-items: stretch;
+  }
+  .sm\:align-baseline {
+    align-items: baseline;
   }
   .sm\:grid-tpl-col-01 {
     grid-template-columns: repeat(1, 1fr);
