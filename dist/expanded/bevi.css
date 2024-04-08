@@ -764,6 +764,9 @@ h6,
 .gap-10, .gap-3xl {
   gap: var(--10);
 }
+.gap-16, .gap-9xl {
+  gap: var(--16);
+}
 
 .ps-absolute {
   position: absolute;
