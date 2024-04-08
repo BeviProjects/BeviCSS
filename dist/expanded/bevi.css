@@ -743,8 +743,8 @@ h6,
   grid-template-rows: repeat(6, 1fr);
 }
 
-.gap-none, .gap-00 {
-  border-radius: 0;
+.gapless, .gap-0 {
+  gap: 0;
 }
 .gap-02, .gap-3xs {
   gap: var(--2);
