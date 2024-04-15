@@ -2685,6 +2685,9 @@ textarea):where(:not(:active)):focus-visible {
   .\32 xl\:ds-grid {
     display: grid;
   }
+  .\32 xl\:gapless, .\32 xl\:gap-0 {
+    gap: 0;
+  }
   .\32 xl\:gap-02, .\32 xl\:gap-3xs {
     gap: var(--2);
   }
@@ -2705,6 +2708,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .\32 xl\:gap-10, .\32 xl\:gap-3xl {
     gap: var(--10);
+  }
+  .\32 xl\:gap-16, .\32 xl\:gap-9xl {
+    gap: var(--16);
   }
   .\32 xl\:ps-absolute {
     position: absolute;
@@ -3693,6 +3699,9 @@ textarea):where(:not(:active)):focus-visible {
   .xl\:ds-grid {
     display: grid;
   }
+  .xl\:gapless, .xl\:gap-0 {
+    gap: 0;
+  }
   .xl\:gap-02, .xl\:gap-3xs {
     gap: var(--2);
   }
@@ -3713,6 +3722,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .xl\:gap-10, .xl\:gap-3xl {
     gap: var(--10);
+  }
+  .xl\:gap-16, .xl\:gap-9xl {
+    gap: var(--16);
   }
   .xl\:ps-absolute {
     position: absolute;
@@ -4746,6 +4758,9 @@ textarea):where(:not(:active)):focus-visible {
   .lg\:ds-grid {
     display: grid;
   }
+  .lg\:gapless, .lg\:gap-0 {
+    gap: 0;
+  }
   .lg\:gap-02, .lg\:gap-3xs {
     gap: var(--2);
   }
@@ -4766,6 +4781,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .lg\:gap-10, .lg\:gap-3xl {
     gap: var(--10);
+  }
+  .lg\:gap-16, .lg\:gap-9xl {
+    gap: var(--16);
   }
   .lg\:ps-absolute {
     position: absolute;
@@ -5754,6 +5772,9 @@ textarea):where(:not(:active)):focus-visible {
   .md\:ds-grid {
     display: grid;
   }
+  .md\:gapless, .md\:gap-0 {
+    gap: 0;
+  }
   .md\:gap-02, .md\:gap-3xs {
     gap: var(--2);
   }
@@ -5774,6 +5795,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .md\:gap-10, .md\:gap-3xl {
     gap: var(--10);
+  }
+  .md\:gap-16, .md\:gap-9xl {
+    gap: var(--16);
   }
   .md\:ps-absolute {
     position: absolute;
@@ -6762,6 +6786,9 @@ textarea):where(:not(:active)):focus-visible {
   .sm\:ds-grid {
     display: grid;
   }
+  .sm\:gapless, .sm\:gap-0 {
+    gap: 0;
+  }
   .sm\:gap-02, .sm\:gap-3xs {
     gap: var(--2);
   }
@@ -6782,6 +6809,9 @@ textarea):where(:not(:active)):focus-visible {
   }
   .sm\:gap-10, .sm\:gap-3xl {
     gap: var(--10);
+  }
+  .sm\:gap-16, .sm\:gap-9xl {
+    gap: var(--16);
   }
   .sm\:ps-absolute {
     position: absolute;
